@@ -22,6 +22,11 @@ class MainVC: UIViewController {
         self.navigationController?.pushViewController(otpVC, animated: true)
     }
     
+    @IBAction
+    func didTapOpenFlutter(_ sender: UIButton) {
+        
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
