@@ -29,8 +29,8 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="D3Z-PS-6pO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AIn-HE-qrG"/>
-                <constraint firstItem="D3Z-PS-6pO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LYX-s3-F18"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D3Z-PS-6pO" secondAttribute="trailing" id="hPK-Vl-9QR"/>
+                <constraint firstItem="D3Z-PS-6pO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kla-v8-gEG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="D3Z-PS-6pO" secondAttribute="bottom" id="lpy-vE-ODd"/>
             </constraints>
             <point key="canvasLocation" x="132" y="-11"/>

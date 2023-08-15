@@ -25,6 +25,12 @@
 		A477B7E22A86128B00A5388A /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477B7E02A86128B00A5388A /* SampleCell.swift */; };
 		A477B7E32A86128B00A5388A /* SampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A477B7E12A86128B00A5388A /* SampleCell.xib */; };
 		A4B8F9C52A8A1CB3001CA71C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8F9C42A8A1CB3001CA71C /* UIView.swift */; };
+		A4EA23B22A8B834A0031E8BC /* StretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B12A8B834A0031E8BC /* StretchyHeader.swift */; };
+		A4EA23B52A8B85D70031E8BC /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B32A8B85D70031E8BC /* RecommendCell.swift */; };
+		A4EA23B62A8B85D70031E8BC /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA23B42A8B85D70031E8BC /* RecommendCell.xib */; };
+		A4EA23B92A8B876D0031E8BC /* RecommendGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B72A8B876D0031E8BC /* RecommendGridCell.swift */; };
+		A4EA23BA2A8B876D0031E8BC /* RecommendGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */; };
+		A4EA23BC2A8B8A040031E8BC /* SelfSizingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23BB2A8B8A040031E8BC /* SelfSizingTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,12 @@
 		A477B7E02A86128B00A5388A /* SampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
 		A477B7E12A86128B00A5388A /* SampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCell.xib; sourceTree = "<group>"; };
 		A4B8F9C42A8A1CB3001CA71C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A4EA23B12A8B834A0031E8BC /* StretchyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeader.swift; sourceTree = "<group>"; };
+		A4EA23B32A8B85D70031E8BC /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
+		A4EA23B42A8B85D70031E8BC /* RecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCell.xib; sourceTree = "<group>"; };
+		A4EA23B72A8B876D0031E8BC /* RecommendGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGridCell.swift; sourceTree = "<group>"; };
+		A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGridCell.xib; sourceTree = "<group>"; };
+		A4EA23BB2A8B8A040031E8BC /* SelfSizingTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTable.swift; sourceTree = "<group>"; };
 		D3E8A5C631F23680B8F4F616 /* Pods_io.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_io.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0633524B1D7EF53C79808B0 /* Pods-io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-io.debug.xcconfig"; path = "Target Support Files/Pods-io/Pods-io.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +132,8 @@
 				A477B7D52A85EA6E00A5388A /* TableNCollection.swift */,
 				A4B8F9C42A8A1CB3001CA71C /* UIView.swift */,
 				A477B7D82A85EF9100A5388A /* ViewController.swift */,
+				A4EA23B12A8B834A0031E8BC /* StretchyHeader.swift */,
+				A4EA23BB2A8B8A040031E8BC /* SelfSizingTable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -143,6 +157,10 @@
 				A477B7E02A86128B00A5388A /* SampleCell.swift */,
 				A477B7E12A86128B00A5388A /* SampleCell.xib */,
 				A477B7DD2A86117200A5388A /* TableVC.xib */,
+				A4EA23B32A8B85D70031E8BC /* RecommendCell.swift */,
+				A4EA23B42A8B85D70031E8BC /* RecommendCell.xib */,
+				A4EA23B72A8B876D0031E8BC /* RecommendGridCell.swift */,
+				A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -228,9 +246,11 @@
 				A477B7D12A85E65700A5388A /* MainVC.xib in Resources */,
 				A40ED9422A89DA54006EF1BE /* PagesCell.xib in Resources */,
 				A477B7DF2A86117200A5388A /* TableVC.xib in Resources */,
+				A4EA23B62A8B85D70031E8BC /* RecommendCell.xib in Resources */,
 				A40ED9472A89DF4F006EF1BE /* OtpVC.xib in Resources */,
 				A477B7C72A85E4B500A5388A /* LaunchScreen.storyboard in Resources */,
 				A477B7C42A85E4B500A5388A /* Assets.xcassets in Resources */,
+				A4EA23BA2A8B876D0031E8BC /* RecommendGridCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +305,11 @@
 			files = (
 				A4B8F9C52A8A1CB3001CA71C /* UIView.swift in Sources */,
 				A477B7D92A85EF9100A5388A /* ViewController.swift in Sources */,
+				A4EA23B22A8B834A0031E8BC /* StretchyHeader.swift in Sources */,
 				A477B7BB2A85E4B100A5388A /* AppDelegate.swift in Sources */,
+				A4EA23BC2A8B8A040031E8BC /* SelfSizingTable.swift in Sources */,
+				A4EA23B52A8B85D70031E8BC /* RecommendCell.swift in Sources */,
+				A4EA23B92A8B876D0031E8BC /* RecommendGridCell.swift in Sources */,
 				A40ED9412A89DA54006EF1BE /* PagesCell.swift in Sources */,
 				A477B7D02A85E65700A5388A /* MainVC.swift in Sources */,
 				A477B7DE2A86117200A5388A /* TableVC.swift in Sources */,
@@ -362,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -419,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -445,7 +469,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,7 +503,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

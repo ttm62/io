@@ -19,6 +19,20 @@ class TableVC: UIViewController {
         
         sampleTable.register(SampleCell.self)
         sampleTable.register(PagesCell.self)
+        sampleTable.register(RecommendCell.self)
+        
+        let headerView = StretchyTableHeaderView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 250))
+        
+        // Image from unsplash: https://unsplash.com/photos/iVPWGCbFwd8
+        headerView.imageView.image = UIImage(named: "header")
+        self.sampleTable.tableHeaderView = headerView
+    }
+}
+
+extension TableVC: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let headerView = self.sampleTable.tableHeaderView as! StretchyTableHeaderView
+        headerView.scrollViewDidScroll(scrollView: scrollView)
     }
 }
 
@@ -33,6 +47,10 @@ extension TableVC: UITableViewDataSource, UITableViewDelegate {
             let cell: PagesCell = tableView.dequeueReusableCell(for: indexPath)
             return cell
             
+        case 9:
+            let cell: RecommendCell = tableView.dequeueReusableCell(for: indexPath)
+            return cell
+            
         default:
             let cell: SampleCell = tableView.dequeueReusableCell(for: indexPath)
             cell.titleLabel.text = "\(indexPath.row)"
@@ -45,8 +63,10 @@ extension TableVC: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             return 200
+//        case 9:
+//            return 500
         default:
-            return 60
+            return .infinity
         }
     }
 }
