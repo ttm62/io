@@ -16,6 +16,12 @@ class MainVC: UIViewController {
         self.navigationController?.pushViewController(tableVC, animated: true)
     }
     
+    @IBAction
+    func didTapOpenOTP(_ sender: UIButton) {
+        let otpVC = OtpVC.loadFromNib()
+        self.navigationController?.pushViewController(otpVC, animated: true)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
