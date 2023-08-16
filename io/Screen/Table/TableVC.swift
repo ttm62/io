@@ -19,13 +19,17 @@ class TableVC: UIViewController {
         
         sampleTable.register(SampleCell.self)
         sampleTable.register(PagesCell.self)
-        sampleTable.register(RecommendCell.self)
+        sampleTable.register(RecommendGrid.self)
         
-        let headerView = StretchyTableHeaderView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 250))
+        let headerView = StretchyTableHeaderView(
+            frame: .init(x: 0, y: 0, width: self.view.bounds.width, height: 300)
+        )
         
         // Image from unsplash: https://unsplash.com/photos/iVPWGCbFwd8
         headerView.imageView.image = UIImage(named: "header")
         self.sampleTable.tableHeaderView = headerView
+        
+        sampleTable.rowHeight = UITableView.automaticDimension
     }
 }
 
@@ -45,10 +49,11 @@ extension TableVC: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             let cell: PagesCell = tableView.dequeueReusableCell(for: indexPath)
+            
             return cell
             
         case 9:
-            let cell: RecommendCell = tableView.dequeueReusableCell(for: indexPath)
+            let cell: RecommendGrid = tableView.dequeueReusableCell(for: indexPath)
             return cell
             
         default:
@@ -63,10 +68,9 @@ extension TableVC: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             return 200
-//        case 9:
-//            return 500
         default:
-            return .infinity
+            return UITableView.automaticDimension
         }
     }
 }
+

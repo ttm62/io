@@ -26,8 +26,8 @@
 		A477B7E32A86128B00A5388A /* SampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A477B7E12A86128B00A5388A /* SampleCell.xib */; };
 		A4B8F9C52A8A1CB3001CA71C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8F9C42A8A1CB3001CA71C /* UIView.swift */; };
 		A4EA23B22A8B834A0031E8BC /* StretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B12A8B834A0031E8BC /* StretchyHeader.swift */; };
-		A4EA23B52A8B85D70031E8BC /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B32A8B85D70031E8BC /* RecommendCell.swift */; };
-		A4EA23B62A8B85D70031E8BC /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA23B42A8B85D70031E8BC /* RecommendCell.xib */; };
+		A4EA23B52A8B85D70031E8BC /* RecommendGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B32A8B85D70031E8BC /* RecommendGrid.swift */; };
+		A4EA23B62A8B85D70031E8BC /* RecommendGrid.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA23B42A8B85D70031E8BC /* RecommendGrid.xib */; };
 		A4EA23B92A8B876D0031E8BC /* RecommendGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B72A8B876D0031E8BC /* RecommendGridCell.swift */; };
 		A4EA23BA2A8B876D0031E8BC /* RecommendGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */; };
 		A4EA23BC2A8B8A040031E8BC /* SelfSizingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23BB2A8B8A040031E8BC /* SelfSizingTable.swift */; };
@@ -55,8 +55,8 @@
 		A477B7E12A86128B00A5388A /* SampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCell.xib; sourceTree = "<group>"; };
 		A4B8F9C42A8A1CB3001CA71C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A4EA23B12A8B834A0031E8BC /* StretchyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeader.swift; sourceTree = "<group>"; };
-		A4EA23B32A8B85D70031E8BC /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
-		A4EA23B42A8B85D70031E8BC /* RecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCell.xib; sourceTree = "<group>"; };
+		A4EA23B32A8B85D70031E8BC /* RecommendGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGrid.swift; sourceTree = "<group>"; };
+		A4EA23B42A8B85D70031E8BC /* RecommendGrid.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGrid.xib; sourceTree = "<group>"; };
 		A4EA23B72A8B876D0031E8BC /* RecommendGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGridCell.swift; sourceTree = "<group>"; };
 		A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGridCell.xib; sourceTree = "<group>"; };
 		A4EA23BB2A8B8A040031E8BC /* SelfSizingTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTable.swift; sourceTree = "<group>"; };
@@ -157,8 +157,8 @@
 				A477B7E02A86128B00A5388A /* SampleCell.swift */,
 				A477B7E12A86128B00A5388A /* SampleCell.xib */,
 				A477B7DD2A86117200A5388A /* TableVC.xib */,
-				A4EA23B32A8B85D70031E8BC /* RecommendCell.swift */,
-				A4EA23B42A8B85D70031E8BC /* RecommendCell.xib */,
+				A4EA23B32A8B85D70031E8BC /* RecommendGrid.swift */,
+				A4EA23B42A8B85D70031E8BC /* RecommendGrid.xib */,
 				A4EA23B72A8B876D0031E8BC /* RecommendGridCell.swift */,
 				A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */,
 			);
@@ -246,7 +246,7 @@
 				A477B7D12A85E65700A5388A /* MainVC.xib in Resources */,
 				A40ED9422A89DA54006EF1BE /* PagesCell.xib in Resources */,
 				A477B7DF2A86117200A5388A /* TableVC.xib in Resources */,
-				A4EA23B62A8B85D70031E8BC /* RecommendCell.xib in Resources */,
+				A4EA23B62A8B85D70031E8BC /* RecommendGrid.xib in Resources */,
 				A40ED9472A89DF4F006EF1BE /* OtpVC.xib in Resources */,
 				A477B7C72A85E4B500A5388A /* LaunchScreen.storyboard in Resources */,
 				A477B7C42A85E4B500A5388A /* Assets.xcassets in Resources */,
@@ -308,7 +308,7 @@
 				A4EA23B22A8B834A0031E8BC /* StretchyHeader.swift in Sources */,
 				A477B7BB2A85E4B100A5388A /* AppDelegate.swift in Sources */,
 				A4EA23BC2A8B8A040031E8BC /* SelfSizingTable.swift in Sources */,
-				A4EA23B52A8B85D70031E8BC /* RecommendCell.swift in Sources */,
+				A4EA23B52A8B85D70031E8BC /* RecommendGrid.swift in Sources */,
 				A4EA23B92A8B876D0031E8BC /* RecommendGridCell.swift in Sources */,
 				A40ED9412A89DA54006EF1BE /* PagesCell.swift in Sources */,
 				A477B7D02A85E65700A5388A /* MainVC.swift in Sources */,
