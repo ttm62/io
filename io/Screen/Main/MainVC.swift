@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Flutter
 
 final
 class MainVC: UIViewController {
@@ -24,7 +25,10 @@ class MainVC: UIViewController {
     
     @IBAction
     func didTapOpenFlutter(_ sender: UIButton) {
-        
+        if let engine = (UIApplication.shared.delegate as? AppDelegate)?.flutterEngine {
+            let flutterVC = FlutterViewController(engine: engine, nibName: nil, bundle: nil)
+            self.navigationController?.present(flutterVC, animated: true)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

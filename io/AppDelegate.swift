@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import Flutter
+import FlutterPluginRegistrant
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: FlutterAppDelegate {
     
-    var window: UIWindow?
+    // var window: UIWindow?
     var navigation: UINavigationController?
+    lazy var flutterEngine = FlutterEngine(name: "my flutter engine")
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
@@ -23,7 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()
         
-        return true
+        // flutter init
+        flutterEngine.run()
+        GeneratedPluginRegistrant.register(with: self.flutterEngine)
+        return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 }
-

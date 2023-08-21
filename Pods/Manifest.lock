@@ -1,16 +1,44 @@
 PODS:
   - AEOTPTextField (1.2.6)
+  - DiffableDataSources (0.5.0):
+    - DifferenceKit/AppKitExtension (~> 1.1)
+    - DifferenceKit/UIKitExtension (~> 1.1)
+  - DifferenceKit/Core (1.3.0)
+  - DifferenceKit/UIKitExtension (1.3.0):
+    - DifferenceKit/Core
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - IBPCollectionViewCompositionalLayout (0.6.9)
 
 DEPENDENCIES:
   - AEOTPTextField
+  - DiffableDataSources
+  - Flutter (from `../io_flutter/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../io_flutter/.ios/Flutter/FlutterPluginRegistrant`)
+  - IBPCollectionViewCompositionalLayout
 
 SPEC REPOS:
   trunk:
     - AEOTPTextField
+    - DiffableDataSources
+    - DifferenceKit
+    - IBPCollectionViewCompositionalLayout
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../io_flutter/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../io_flutter/.ios/Flutter/FlutterPluginRegistrant"
 
 SPEC CHECKSUMS:
   AEOTPTextField: a275823fde05601c5da7f8fb66aaecb41289b370
+  DiffableDataSources: 1ddde2de1978cc02619b2c3bfafab20e68b57279
+  DifferenceKit: ab185c4d7f9cef8af3fcf593e5b387fb81e999ca
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  FlutterPluginRegistrant: 58acfb6cb31ee4ca14f920aba101815efda113ee
+  IBPCollectionViewCompositionalLayout: bbb29e39ac564666a8c3cdb6633ed944b6feb55b
 
-PODFILE CHECKSUM: 832dcea625ef502470f9c89a0f8971a2e6d99543
+PODFILE CHECKSUM: 98b62405c2edf4267855964b966591e78c8eca1f
 
 COCOAPODS: 1.12.1
