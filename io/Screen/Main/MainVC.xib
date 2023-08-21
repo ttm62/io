@@ -62,7 +62,10 @@
                                         <constraint firstAttribute="height" constant="60" id="b0d-iU-1aU"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Stretchy view"/>
+                                    <connections>
+                                        <action selector="didTapStretchy" destination="-1" eventType="touchUpInside" id="2Ms-14-aHx"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOF-cZ-sFv">
                                     <rect key="frame" x="0.0" y="240" width="414" height="60"/>

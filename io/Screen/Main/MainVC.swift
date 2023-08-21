@@ -31,6 +31,12 @@ class MainVC: UIViewController {
         }
     }
     
+    @IBAction
+    func didTapStretchy() {
+        let stretchyVC = StretchyVC.loadFromNib()
+        self.navigationController?.pushViewController(stretchyVC, animated: true)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }

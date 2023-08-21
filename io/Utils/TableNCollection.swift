@@ -5,12 +5,40 @@
 import Foundation
 import UIKit
 
-protocol ReusableView: AnyObject {
-    static var defaultReuseIdentifier: String { get }
+// MARK: NibLoadableView
+protocol NibLoadableView: AnyObject {
+    static var nib: UINib { get }
 }
 
-protocol NibLoadableView: AnyObject {
-    static var nibName: String { get }
+extension NibLoadableView {
+    static var nib: UINib {
+        return UINib(nibName: String(describing: self),
+                     bundle: Bundle(for: self).resource)
+    }
+}
+
+// Support for instantiation from NIB
+extension NibLoadableView where Self: UIView {
+    func loadViewFromNib() {
+        let layoutAttributes: [NSLayoutConstraint.Attribute] = [.top, .leading, .bottom, .trailing]
+        for case let view as UIView in type(of: self).nib.instantiate(withOwner: self, options: nil) {
+            view.translatesAutoresizingMaskIntoConstraints = false
+            self.addSubview(view)
+            NSLayoutConstraint.activate(layoutAttributes.map { attribute in
+                NSLayoutConstraint(
+                    item: view, attribute: attribute,
+                    relatedBy: .equal,
+                    toItem: self, attribute: attribute,
+                    multiplier: 1, constant: 0.0
+                )
+            })
+        }
+    }
+}
+
+// MARK: Reuseable view
+protocol ReusableView: AnyObject {
+    static var defaultReuseIdentifier: String { get }
 }
 
 extension ReusableView where Self: UIView {
@@ -19,22 +47,14 @@ extension ReusableView where Self: UIView {
     }
 }
 
-extension NibLoadableView where Self: UIView {
-    static var nibName: String {
-        return String(describing: self)
-    }
-}
-
-//Confirming Collection View and TableView for Registering and Dequeing
+// MARK: - Confirming Collection View and TableView for Registering and Dequeing
 extension UICollectionView {
     func register<T: UICollectionViewCell>(_: T.Type) where T: ReusableView {
         register(T.self, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
     }
     
     func register<T: UICollectionViewCell>(_: T.Type) where T: ReusableView, T: NibLoadableView {
-        let bundle = Bundle(for: T.self)
-        let nib = UINib(nibName: T.nibName, bundle: bundle)
-        register(nib, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
+        register(T.nib, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
     }
     
     //Registering Supplementary View
@@ -44,9 +64,7 @@ extension UICollectionView {
     }
     
     func register<T: UICollectionReusableView>(_: T.Type, supplementaryViewOfKind: String) where T: ReusableView, T: NibLoadableView {
-        let bundle = Bundle(for: T.self)
-        let nib = UINib(nibName: T.nibName, bundle: bundle)
-        register(nib, forSupplementaryViewOfKind: supplementaryViewOfKind, withReuseIdentifier: T.defaultReuseIdentifier)
+        register(T.nib, forSupplementaryViewOfKind: supplementaryViewOfKind, withReuseIdentifier: T.defaultReuseIdentifier)
     }
     
     //Dequeing
@@ -68,31 +86,25 @@ extension UICollectionView {
 
 extension UITableView {
     
-    //Registering Cell
+    // Registering Cell
     func register<T: UITableViewCell>(_: T.Type) where T: ReusableView {
         register(T.self, forCellReuseIdentifier: T.defaultReuseIdentifier)
     }
     
     func register<T: UITableViewCell>(_: T.Type) where T: ReusableView, T: NibLoadableView {
-        let bundle = Bundle(for: T.self)
-        let nib = UINib(nibName: T.nibName, bundle: bundle)
-        register(nib, forCellReuseIdentifier: T.defaultReuseIdentifier)
+        register(T.nib, forCellReuseIdentifier: T.defaultReuseIdentifier)
     }
     
-    //Registering HeaderFooterView
-    
+    // Registering HeaderFooterView
     func register<T: UITableViewHeaderFooterView>(_: T.Type) where T: ReusableView {
         register(T.self, forHeaderFooterViewReuseIdentifier: T.defaultReuseIdentifier)
     }
     
     func register<T: UITableViewHeaderFooterView>(_: T.Type) where T: ReusableView, T: NibLoadableView {
-        let bundle = Bundle(for: T.self)
-        let nib = UINib(nibName: T.nibName, bundle: bundle)
-        register(nib, forHeaderFooterViewReuseIdentifier: T.defaultReuseIdentifier)
+        register(T.nib, forHeaderFooterViewReuseIdentifier: T.defaultReuseIdentifier)
     }
     
-    //Dequeing
-    
+    // Dequeing
     func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T where T: ReusableView {
         guard let cell = dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as? T else {
             fatalError("Could not dequeue cell with identifier: \(T.defaultReuseIdentifier)")
