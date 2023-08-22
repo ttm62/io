@@ -14,10 +14,17 @@ target 'io' do
   # backport to use new api
   pod 'DiffableDataSources'
   pod 'IBPCollectionViewCompositionalLayout'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
   install_all_flutter_pods(flutter_application_path)
 end
 
 post_install do |installer|
   flutter_post_install(installer) if defined?(flutter_post_install)
+  
+  # Add these three lines down below -----------------------------------------------
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  end
 end
