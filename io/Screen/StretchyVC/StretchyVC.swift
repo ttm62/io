@@ -18,8 +18,6 @@ class StretchyVC: UIViewController {
         tableView.dataSource = self
         tableView.register(SampleCell.self)
     }
-    
-    
 }
 
 extension StretchyVC: UITableViewDelegate, UITableViewDataSource {

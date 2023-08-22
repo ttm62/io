@@ -37,6 +37,23 @@ class MainVC: UIViewController {
         self.navigationController?.pushViewController(stretchyVC, animated: true)
     }
     
+    @IBAction
+    func didTapMap() {
+        let mapVC = MapVC.loadFromNib()
+        self.navigationController?.pushViewController(mapVC, animated: true)
+    }
+    
+    @IBAction
+    func didTapMediumSheet() {
+        let setTimeVC = SetTimeForRide.loadFromNib()
+        present(
+            setTimeVC.with {
+                $0.preferredSheetSizing = .large
+            },
+            animated: true
+        )
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }

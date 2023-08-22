@@ -73,7 +73,10 @@
                                         <constraint firstAttribute="height" constant="60" id="Zkh-AN-Naq"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Map view"/>
+                                    <connections>
+                                        <action selector="didTapMap" destination="-1" eventType="touchUpInside" id="01r-IY-wvk"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CI8-CA-tzB">
                                     <rect key="frame" x="0.0" y="300" width="414" height="60"/>
@@ -81,7 +84,10 @@
                                         <constraint firstAttribute="height" constant="60" id="amA-v8-Q7t"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Medium sheet"/>
+                                    <connections>
+                                        <action selector="didTapMediumSheet" destination="-1" eventType="touchUpInside" id="S7v-Ac-LPd"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY4-RJ-M3E">
                                     <rect key="frame" x="0.0" y="360" width="414" height="60"/>

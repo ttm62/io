@@ -8,6 +8,7 @@
 import UIKit
 import Flutter
 import FlutterPluginRegistrant
+import GoogleMaps
 
 @main
 class AppDelegate: FlutterAppDelegate {
@@ -17,6 +18,9 @@ class AppDelegate: FlutterAppDelegate {
     lazy var flutterEngine = FlutterEngine(name: "my flutter engine")
     
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Config
+        GMSServices.provideAPIKey("AIzaSyDWsMvDeOaou3X1aRSnXEIUVlymkzVkCgA")
+        
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
