@@ -54,6 +54,12 @@ class MainVC: UIViewController {
         )
     }
     
+    @IBAction
+    func didTapChat() {
+        let chatVC = ChatVC.loadFromNib()
+        push(controller: chatVC)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }

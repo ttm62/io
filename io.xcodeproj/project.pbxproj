@@ -54,6 +54,14 @@
 		A477B7DF2A86117200A5388A /* TableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A477B7DD2A86117200A5388A /* TableVC.xib */; };
 		A477B7E22A86128B00A5388A /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477B7E02A86128B00A5388A /* SampleCell.swift */; };
 		A477B7E32A86128B00A5388A /* SampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A477B7E12A86128B00A5388A /* SampleCell.xib */; };
+		A4B64BE72A95A1AF00F4E5EC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B64BE52A95A1AF00F4E5EC /* ChatVC.swift */; };
+		A4B64BE82A95A1AF00F4E5EC /* ChatVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B64BE62A95A1AF00F4E5EC /* ChatVC.xib */; };
+		A4B64BEB2A95ABF700F4E5EC /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B64BE92A95ABF700F4E5EC /* ChatCell.swift */; };
+		A4B64BEC2A95ABF700F4E5EC /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B64BEA2A95ABF700F4E5EC /* ChatCell.xib */; };
+		A4B64BF02A95C2D900F4E5EC /* MeChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B64BEE2A95C2D900F4E5EC /* MeChatCell.swift */; };
+		A4B64BF12A95C2D900F4E5EC /* MeChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B64BEF2A95C2D900F4E5EC /* MeChatCell.xib */; };
+		A4B64BF42A95C2EC00F4E5EC /* OtherChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B64BF22A95C2EC00F4E5EC /* OtherChatCell.swift */; };
+		A4B64BF52A95C2EC00F4E5EC /* OtherChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B64BF32A95C2EC00F4E5EC /* OtherChatCell.xib */; };
 		A4B8F9C52A8A1CB3001CA71C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8F9C42A8A1CB3001CA71C /* UIView.swift */; };
 		A4EA23B22A8B834A0031E8BC /* StretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B12A8B834A0031E8BC /* StretchyHeader.swift */; };
 		A4EA23B52A8B85D70031E8BC /* RecommendGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B32A8B85D70031E8BC /* RecommendGrid.swift */; };
@@ -113,6 +121,14 @@
 		A477B7DD2A86117200A5388A /* TableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableVC.xib; sourceTree = "<group>"; };
 		A477B7E02A86128B00A5388A /* SampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
 		A477B7E12A86128B00A5388A /* SampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCell.xib; sourceTree = "<group>"; };
+		A4B64BE52A95A1AF00F4E5EC /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		A4B64BE62A95A1AF00F4E5EC /* ChatVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatVC.xib; sourceTree = "<group>"; };
+		A4B64BE92A95ABF700F4E5EC /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		A4B64BEA2A95ABF700F4E5EC /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		A4B64BEE2A95C2D900F4E5EC /* MeChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeChatCell.swift; sourceTree = "<group>"; };
+		A4B64BEF2A95C2D900F4E5EC /* MeChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeChatCell.xib; sourceTree = "<group>"; };
+		A4B64BF22A95C2EC00F4E5EC /* OtherChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherChatCell.swift; sourceTree = "<group>"; };
+		A4B64BF32A95C2EC00F4E5EC /* OtherChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherChatCell.xib; sourceTree = "<group>"; };
 		A4B8F9C42A8A1CB3001CA71C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A4EA23B12A8B834A0031E8BC /* StretchyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeader.swift; sourceTree = "<group>"; };
 		A4EA23B32A8B85D70031E8BC /* RecommendGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGrid.swift; sourceTree = "<group>"; };
@@ -324,6 +340,7 @@
 		A477B7DA2A86100400A5388A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				A4B64BE42A95A18D00F4E5EC /* Chat */,
 				A416F3D22A94532300FD4957 /* SetTImeForRide */,
 				A43894A92A93521E00BE77A6 /* Map */,
 				A43894942A9302F900BE77A6 /* StretchyVC */,
@@ -349,6 +366,45 @@
 				A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */,
 			);
 			path = Table;
+			sourceTree = "<group>";
+		};
+		A4B64BE42A95A18D00F4E5EC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A4B64BF72A95C2F400F4E5EC /* MeChatCell */,
+				A4B64BF62A95C2EE00F4E5EC /* OtherChatCell */,
+				A4B64BE52A95A1AF00F4E5EC /* ChatVC.swift */,
+				A4B64BE62A95A1AF00F4E5EC /* ChatVC.xib */,
+				A4B64BED2A95ABFA00F4E5EC /* ChatCell */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A4B64BED2A95ABFA00F4E5EC /* ChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4B64BE92A95ABF700F4E5EC /* ChatCell.swift */,
+				A4B64BEA2A95ABF700F4E5EC /* ChatCell.xib */,
+			);
+			path = ChatCell;
+			sourceTree = "<group>";
+		};
+		A4B64BF62A95C2EE00F4E5EC /* OtherChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4B64BF22A95C2EC00F4E5EC /* OtherChatCell.swift */,
+				A4B64BF32A95C2EC00F4E5EC /* OtherChatCell.xib */,
+			);
+			path = OtherChatCell;
+			sourceTree = "<group>";
+		};
+		A4B64BF72A95C2F400F4E5EC /* MeChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4B64BEE2A95C2D900F4E5EC /* MeChatCell.swift */,
+				A4B64BEF2A95C2D900F4E5EC /* MeChatCell.xib */,
+			);
+			path = MeChatCell;
 			sourceTree = "<group>";
 		};
 		BA4980877D16988C1F897AA5 /* Pods */ = {
@@ -433,13 +489,16 @@
 			files = (
 				A43894982A93030300BE77A6 /* StretchyVC.xib in Resources */,
 				A43894A52A93070F00BE77A6 /* AnotherSampleCell.xib in Resources */,
+				A4B64BF52A95C2EC00F4E5EC /* OtherChatCell.xib in Resources */,
 				A477B7E32A86128B00A5388A /* SampleCell.xib in Resources */,
 				A477B7D12A85E65700A5388A /* MainVC.xib in Resources */,
+				A4B64BF12A95C2D900F4E5EC /* MeChatCell.xib in Resources */,
 				A40ED9422A89DA54006EF1BE /* PagesCell.xib in Resources */,
 				A43894CC2A936AAE00BE77A6 /* DriverNoteCell.xib in Resources */,
 				A477B7DF2A86117200A5388A /* TableVC.xib in Resources */,
 				A416F3E62A94594400FD4957 /* NunitoSans-Italic.ttf in Resources */,
 				A4EA23B62A8B85D70031E8BC /* RecommendGrid.xib in Resources */,
+				A4B64BE82A95A1AF00F4E5EC /* ChatVC.xib in Resources */,
 				A43894AD2A93523200BE77A6 /* MapVC.xib in Resources */,
 				A416F3D12A94532000FD4957 /* SetTimeForRide.xib in Resources */,
 				A40ED9472A89DF4F006EF1BE /* OtpVC.xib in Resources */,
@@ -447,6 +506,7 @@
 				A477B7C72A85E4B500A5388A /* LaunchScreen.storyboard in Resources */,
 				A438949D2A9303C700BE77A6 /* StretchyView.xib in Resources */,
 				A43894C72A93692200BE77A6 /* BigButtonCell.xib in Resources */,
+				A4B64BEC2A95ABF700F4E5EC /* ChatCell.xib in Resources */,
 				A477B7C42A85E4B500A5388A /* Assets.xcassets in Resources */,
 				A4EA23BA2A8B876D0031E8BC /* RecommendGridCell.xib in Resources */,
 			);
@@ -538,6 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B64BE72A95A1AF00F4E5EC /* ChatVC.swift in Sources */,
 				A416F3DE2A9454DF00FD4957 /* UIImageView+Extensions.swift in Sources */,
 				A43894972A93030300BE77A6 /* StretchyVC.swift in Sources */,
 				A43894A12A93053C00BE77A6 /* Bundle.swift in Sources */,
@@ -547,7 +608,9 @@
 				A416F3E12A9454DF00FD4957 /* UIView+Extensions.swift in Sources */,
 				A416F3DF2A9454DF00FD4957 /* UILabel+Extensions.swift in Sources */,
 				A4EA23B22A8B834A0031E8BC /* StretchyHeader.swift in Sources */,
+				A4B64BF42A95C2EC00F4E5EC /* OtherChatCell.swift in Sources */,
 				A416F3E92A94660E00FD4957 /* DateHelper.swift in Sources */,
+				A4B64BF02A95C2D900F4E5EC /* MeChatCell.swift in Sources */,
 				A477B7BB2A85E4B100A5388A /* AppDelegate.swift in Sources */,
 				A4EA23BC2A8B8A040031E8BC /* SelfSizingTable.swift in Sources */,
 				A43894A42A93070F00BE77A6 /* AnotherSampleCell.swift in Sources */,
@@ -566,6 +629,7 @@
 				A416F3D52A9454C600FD4957 /* Withable.swift in Sources */,
 				A416F3EB2A946AB400FD4957 /* Collection.swift in Sources */,
 				A40ED9462A89DF4F006EF1BE /* OtpVC.swift in Sources */,
+				A4B64BEB2A95ABF700F4E5EC /* ChatCell.swift in Sources */,
 				A477B7D32A85E9CD00A5388A /* SceneDelegate.swift in Sources */,
 				A416F3D72A9454D200FD4957 /* NSObject+Extensions.swift in Sources */,
 				A438949B2A9303BF00BE77A6 /* StretchyView.swift in Sources */,

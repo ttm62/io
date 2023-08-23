@@ -87,10 +87,10 @@ extension OtpVC {
         // Change the constant
         if keyboardWillShow {
             let safeAreaExists = (self.view?.window?.safeAreaInsets.bottom != 0) // Check if safe area exists
-            let bottomConstant: CGFloat = 20
+            let bottomConstant: CGFloat = 0
             viewBottomConstraint.constant = keyboardHeight + (safeAreaExists ? 0 : bottomConstant)
         } else {
-            viewBottomConstraint.constant = 20
+            viewBottomConstraint.constant = 0
         }
         
         // Animate the view the same way the keyboard animates
