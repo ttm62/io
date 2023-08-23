@@ -106,7 +106,10 @@
                                         <constraint firstAttribute="height" constant="60" id="7rv-uM-UUa"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Custom views"/>
+                                    <connections>
+                                        <action selector="didTapCustomView" destination="-1" eventType="touchUpInside" id="Chr-cn-nYJ"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdz-py-iF2">
                                     <rect key="frame" x="0.0" y="480" width="414" height="60"/>

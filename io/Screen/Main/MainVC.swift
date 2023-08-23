@@ -60,6 +60,12 @@ class MainVC: UIViewController {
         push(controller: chatVC)
     }
     
+    @IBAction
+    func didTapCustomView() {
+        let viewsVC = CustomViewsVC.loadFromNib()
+        push(controller: viewsVC)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
