@@ -7,6 +7,7 @@
 
 import UIKit
 import Flutter
+import ContactsUI
 
 final
 class MainVC: UIViewController {
@@ -66,6 +67,25 @@ class MainVC: UIViewController {
         push(controller: viewsVC)
     }
     
+    @IBAction
+    func didTapContacts() {
+        let picker = CNContactPickerViewController()
+        picker.delegate = self
+        present(picker, animated: true)
+    }
+    
+    @IBAction
+    func didTapCustomFont() {
+        let fontVC = FontVC.loadFromNib()
+        push(controller: fontVC)
+    }
+    
+    @IBAction
+    func didTapDashedLine() {
+        let dashedLineVC = DashedLineVC.loadFromNib()
+        push(controller: dashedLineVC)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
@@ -77,6 +97,20 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.title = "Demo"
+        for family: String in UIFont.familyNames
+        {
+            print(family)
+            for names: String in UIFont.fontNames(forFamilyName: family)
+            {
+                print("== \(names)")
+            }
+        }
+        
+    }
+}
+
+extension MainVC: CNContactPickerDelegate {
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        print(contact)
     }
 }

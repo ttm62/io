@@ -156,9 +156,9 @@ extension SetTimeForRide: UIPickerViewDelegate, UIPickerViewDataSource {
 //        default: ()
 //        }
 //        
-////        guard let font = UIFont(name: "NunitoSans", size: UIFont.labelFontSize) else {
-////            return NSAttributedString(string: title)
-////        }
+//        guard let font = UIFont(name: "NunitoSans", size: UIFont.labelFontSize) else {
+//            return NSAttributedString(string: title)
+//        }
 //        
 //        return NSAttributedString(
 //            string: title,

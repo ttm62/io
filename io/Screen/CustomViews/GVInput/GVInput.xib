@@ -11,19 +11,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GVInput" customModule="io" customModuleProvider="target">
             <connections>
                 <outlet property="hintLabel" destination="fKk-PJ-5Z7" id="XV4-9p-EOH"/>
+                <outlet property="leftBtn" destination="OFr-qw-Gvn" id="MhI-sY-GLF"/>
+                <outlet property="rightBtn" destination="vNO-Eb-M5I" id="EOV-F2-VxB"/>
                 <outlet property="searchField" destination="CSY-Mc-KIx" id="V38-kd-CNb"/>
-                <outlet property="searchIcon" destination="A8c-hH-tFH" id="Pmq-26-jba"/>
                 <outlet property="searchView" destination="ICQ-C1-2VZ" id="ClC-e7-gni"/>
                 <outlet property="titleLabel" destination="26I-rl-HH8" id="mhP-av-SRa"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="271" height="79"/>
+            <rect key="frame" x="0.0" y="0.0" width="271" height="88"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="uky-4E-iTc">
-                    <rect key="frame" x="0.0" y="4" width="271" height="71"/>
+                    <rect key="frame" x="0.0" y="4" width="271" height="80"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lable Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26I-rl-HH8">
                             <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="17"/>
@@ -32,24 +33,31 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICQ-C1-2VZ">
-                            <rect key="frame" x="0.0" y="20" width="271" height="31"/>
+                            <rect key="frame" x="0.0" y="20" width="271" height="40"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Jzh-sx-hsH">
-                                    <rect key="frame" x="10" y="-0.33333333333333215" width="251" height="32"/>
+                                    <rect key="frame" x="10" y="9" width="251" height="22"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="A8c-hH-tFH">
-                                            <rect key="frame" x="0.0" y="0.99999999999999645" width="32" height="30.333333333333329"/>
-                                            <color key="tintColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="32" id="9kI-4B-NFJ"/>
-                                                <constraint firstAttribute="width" secondItem="A8c-hH-tFH" secondAttribute="height" multiplier="1:1" id="uBN-OG-IHY"/>
-                                            </constraints>
-                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFr-qw-Gvn">
+                                            <rect key="frame" x="0.0" y="0.0" width="20.333333333333332" height="22"/>
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="magnifyingglass" catalog="system"/>
+                                        </button>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type something" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="CSY-Mc-KIx">
-                                            <rect key="frame" x="38" y="0.0" width="213" height="32"/>
+                                            <rect key="frame" x="26.333333333333343" y="0.0" width="198.99999999999997" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNO-Eb-M5I">
+                                            <rect key="frame" x="231.33333333333334" y="0.0" width="19.666666666666657" height="22"/>
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="exclamationmark.circle" catalog="system"/>
+                                            <connections>
+                                                <action selector="didTapRightIconAction" destination="-1" eventType="touchUpInside" id="WQL-8m-fAS"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </stackView>
                             </subviews>
@@ -62,13 +70,13 @@
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
-                                    <real key="value" value="6"/>
+                                    <real key="value" value="8"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a hint text to help user!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKk-PJ-5Z7">
-                            <rect key="frame" x="0.0" y="54" width="190.66666666666666" height="17"/>
-                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <rect key="frame" x="0.0" y="63" width="194" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -86,16 +94,17 @@
                 <constraint firstAttribute="bottom" secondItem="uky-4E-iTc" secondAttribute="bottom" constant="4" id="mSz-7R-BJw"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="54.198473282442748" y="0.35211267605633806"/>
+            <point key="canvasLocation" x="54.198473282442748" y="2.8169014084507045"/>
         </view>
     </objects>
     <resources>
+        <image name="exclamationmark.circle" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

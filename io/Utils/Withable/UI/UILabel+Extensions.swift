@@ -16,4 +16,16 @@ public extension UILabel {
             $0.text = text
         }
     }
+    
+    func withTextColor(_ color: UIColor?) -> Self {
+        with {
+            $0.textColor = color
+        }
+    }
+    
+    func withFont(_ font: UIFont?) -> Self {
+        with {
+            $0.font = font
+        }
+    }
 }

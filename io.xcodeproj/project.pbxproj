@@ -25,8 +25,6 @@
 		A416F3E02A9454DF00FD4957 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416F3DB2A9454DF00FD4957 /* UIButton+Extensions.swift */; };
 		A416F3E12A9454DF00FD4957 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416F3DC2A9454DF00FD4957 /* UIView+Extensions.swift */; };
 		A416F3E22A9454DF00FD4957 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416F3DD2A9454DF00FD4957 /* UIStackView+Extensions.swift */; };
-		A416F3E62A94594400FD4957 /* NunitoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A416F3E42A94594400FD4957 /* NunitoSans-Italic.ttf */; };
-		A416F3E72A94594400FD4957 /* NunitoSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A416F3E52A94594400FD4957 /* NunitoSans.ttf */; };
 		A416F3E92A94660E00FD4957 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416F3E82A94660E00FD4957 /* DateHelper.swift */; };
 		A416F3EB2A946AB400FD4957 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416F3EA2A946AB400FD4957 /* Collection.swift */; };
 		A43894972A93030300BE77A6 /* StretchyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43894952A93030300BE77A6 /* StretchyVC.swift */; };
@@ -42,6 +40,14 @@
 		A43894C72A93692200BE77A6 /* BigButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43894C52A93692200BE77A6 /* BigButtonCell.xib */; };
 		A43894CB2A936AAE00BE77A6 /* DriverNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43894C92A936AAE00BE77A6 /* DriverNoteCell.swift */; };
 		A43894CC2A936AAE00BE77A6 /* DriverNoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43894CA2A936AAE00BE77A6 /* DriverNoteCell.xib */; };
+		A4460BED2A9719BD007BA6BA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4460BEC2A9719BD007BA6BA /* UIColor.swift */; };
+		A4460BF52A974630007BA6BA /* FontVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4460BF32A974630007BA6BA /* FontVC.swift */; };
+		A4460BF62A974630007BA6BA /* FontVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4460BF42A974630007BA6BA /* FontVC.xib */; };
+		A4460C212A975C4E007BA6BA /* NunitoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4460C1F2A975C4E007BA6BA /* NunitoSans-Italic.ttf */; };
+		A4460C222A975C4E007BA6BA /* NunitoSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4460C202A975C4E007BA6BA /* NunitoSans.ttf */; };
+		A4460C242A975E0B007BA6BA /* DashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4460C232A975E0B007BA6BA /* DashedLineView.swift */; };
+		A4460C272A975E55007BA6BA /* DashedLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4460C252A975E55007BA6BA /* DashedLineVC.swift */; };
+		A4460C282A975E55007BA6BA /* DashedLineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4460C262A975E55007BA6BA /* DashedLineVC.xib */; };
 		A477B7BB2A85E4B100A5388A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477B7BA2A85E4B100A5388A /* AppDelegate.swift */; };
 		A477B7C42A85E4B500A5388A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A477B7C32A85E4B500A5388A /* Assets.xcassets */; };
 		A477B7C72A85E4B500A5388A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A477B7C52A85E4B500A5388A /* LaunchScreen.storyboard */; };
@@ -94,8 +100,6 @@
 		A416F3DB2A9454DF00FD4957 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		A416F3DC2A9454DF00FD4957 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		A416F3DD2A9454DF00FD4957 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
-		A416F3E42A94594400FD4957 /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
-		A416F3E52A94594400FD4957 /* NunitoSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NunitoSans.ttf; sourceTree = "<group>"; };
 		A416F3E82A94660E00FD4957 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		A416F3EA2A946AB400FD4957 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		A43894952A93030300BE77A6 /* StretchyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyVC.swift; sourceTree = "<group>"; };
@@ -111,6 +115,14 @@
 		A43894C52A93692200BE77A6 /* BigButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigButtonCell.xib; sourceTree = "<group>"; };
 		A43894C92A936AAE00BE77A6 /* DriverNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverNoteCell.swift; sourceTree = "<group>"; };
 		A43894CA2A936AAE00BE77A6 /* DriverNoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverNoteCell.xib; sourceTree = "<group>"; };
+		A4460BEC2A9719BD007BA6BA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A4460BF32A974630007BA6BA /* FontVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontVC.swift; sourceTree = "<group>"; };
+		A4460BF42A974630007BA6BA /* FontVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontVC.xib; sourceTree = "<group>"; };
+		A4460C1F2A975C4E007BA6BA /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
+		A4460C202A975C4E007BA6BA /* NunitoSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NunitoSans.ttf; sourceTree = "<group>"; };
+		A4460C232A975E0B007BA6BA /* DashedLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLineView.swift; sourceTree = "<group>"; };
+		A4460C252A975E55007BA6BA /* DashedLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLineVC.swift; sourceTree = "<group>"; };
+		A4460C262A975E55007BA6BA /* DashedLineVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashedLineVC.xib; sourceTree = "<group>"; };
 		A477B7B72A85E4B100A5388A /* io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A477B7BA2A85E4B100A5388A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A477B7C32A85E4B500A5388A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,8 +226,8 @@
 		A416F3E32A94593900FD4957 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				A416F3E42A94594400FD4957 /* NunitoSans-Italic.ttf */,
-				A416F3E52A94594400FD4957 /* NunitoSans.ttf */,
+				A4460C1F2A975C4E007BA6BA /* NunitoSans-Italic.ttf */,
+				A4460C202A975C4E007BA6BA /* NunitoSans.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -286,6 +298,24 @@
 			path = DriverNoteCell;
 			sourceTree = "<group>";
 		};
+		A4460BF22A974618007BA6BA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A4460BF32A974630007BA6BA /* FontVC.swift */,
+				A4460BF42A974630007BA6BA /* FontVC.xib */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A4460C292A975E60007BA6BA /* DashedLineVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4460C252A975E55007BA6BA /* DashedLineVC.swift */,
+				A4460C262A975E55007BA6BA /* DashedLineVC.xib */,
+			);
+			path = DashedLineVC;
+			sourceTree = "<group>";
+		};
 		A477B7AE2A85E4B100A5388A = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +371,8 @@
 				A43894A02A93053C00BE77A6 /* Bundle.swift */,
 				A416F3E82A94660E00FD4957 /* DateHelper.swift */,
 				A416F3EA2A946AB400FD4957 /* Collection.swift */,
+				A4460BEC2A9719BD007BA6BA /* UIColor.swift */,
+				A4460C232A975E0B007BA6BA /* DashedLineView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -348,6 +380,8 @@
 		A477B7DA2A86100400A5388A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				A4460C292A975E60007BA6BA /* DashedLineVC */,
+				A4460BF22A974618007BA6BA /* Fonts */,
 				A4B64BFE2A960D0900F4E5EC /* CustomViews */,
 				A4B64BE42A95A18D00F4E5EC /* Chat */,
 				A416F3D22A94532300FD4957 /* SetTImeForRide */,
@@ -517,22 +551,24 @@
 			files = (
 				A43894982A93030300BE77A6 /* StretchyVC.xib in Resources */,
 				A4B64BFB2A96061000F4E5EC /* GVInput.xib in Resources */,
+				A4460C222A975C4E007BA6BA /* NunitoSans.ttf in Resources */,
 				A43894A52A93070F00BE77A6 /* AnotherSampleCell.xib in Resources */,
 				A4B64BF52A95C2EC00F4E5EC /* OtherChatCell.xib in Resources */,
 				A477B7E32A86128B00A5388A /* SampleCell.xib in Resources */,
+				A4460BF62A974630007BA6BA /* FontVC.xib in Resources */,
+				A4460C212A975C4E007BA6BA /* NunitoSans-Italic.ttf in Resources */,
 				A477B7D12A85E65700A5388A /* MainVC.xib in Resources */,
 				A4B64BF12A95C2D900F4E5EC /* MeChatCell.xib in Resources */,
 				A40ED9422A89DA54006EF1BE /* PagesCell.xib in Resources */,
 				A43894CC2A936AAE00BE77A6 /* DriverNoteCell.xib in Resources */,
 				A477B7DF2A86117200A5388A /* TableVC.xib in Resources */,
-				A416F3E62A94594400FD4957 /* NunitoSans-Italic.ttf in Resources */,
 				A4EA23B62A8B85D70031E8BC /* RecommendGrid.xib in Resources */,
 				A4B64C022A960D2E00F4E5EC /* CustomViewsVC.xib in Resources */,
 				A4B64BE82A95A1AF00F4E5EC /* ChatVC.xib in Resources */,
 				A43894AD2A93523200BE77A6 /* MapVC.xib in Resources */,
+				A4460C282A975E55007BA6BA /* DashedLineVC.xib in Resources */,
 				A416F3D12A94532000FD4957 /* SetTimeForRide.xib in Resources */,
 				A40ED9472A89DF4F006EF1BE /* OtpVC.xib in Resources */,
-				A416F3E72A94594400FD4957 /* NunitoSans.ttf in Resources */,
 				A477B7C72A85E4B500A5388A /* LaunchScreen.storyboard in Resources */,
 				A438949D2A9303C700BE77A6 /* StretchyView.xib in Resources */,
 				A43894C72A93692200BE77A6 /* BigButtonCell.xib in Resources */,
@@ -629,6 +665,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4B64BE72A95A1AF00F4E5EC /* ChatVC.swift in Sources */,
+				A4460BF52A974630007BA6BA /* FontVC.swift in Sources */,
+				A4460BED2A9719BD007BA6BA /* UIColor.swift in Sources */,
 				A416F3DE2A9454DF00FD4957 /* UIImageView+Extensions.swift in Sources */,
 				A43894972A93030300BE77A6 /* StretchyVC.swift in Sources */,
 				A43894A12A93053C00BE77A6 /* Bundle.swift in Sources */,
@@ -667,8 +705,10 @@
 				A438949B2A9303BF00BE77A6 /* StretchyView.swift in Sources */,
 				A416F3CB2A94528600FD4957 /* BottomSheetTransitioningDelegate.swift in Sources */,
 				A43894C62A93692200BE77A6 /* BigButtonCell.swift in Sources */,
+				A4460C272A975E55007BA6BA /* DashedLineVC.swift in Sources */,
 				A477B7D62A85EA6E00A5388A /* TableNCollection.swift in Sources */,
 				A416F3E02A9454DF00FD4957 /* UIButton+Extensions.swift in Sources */,
+				A4460C242A975E0B007BA6BA /* DashedLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,6 +858,7 @@
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = io/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Xin quyền đọc danh bạ =]";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -853,6 +894,7 @@
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = io/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Xin quyền đọc danh bạ =]";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

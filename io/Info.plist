@@ -4,7 +4,22 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>NunitoSans.ttf</string>
+		<string>Fonts/NunitoSans_10pt-Black.ttf</string>
+		<string>Fonts/NunitoSans_10pt-Blackitalic.ttf</string>
+		<string>Fonts/NunitoSans_10pt-Bold.ttf</string>
+		<string>Fonts/NunitoSans_10pt-Bolditalic.ttf</string>
+		<string>Fonts/NunitoSans_10pt-ExtraBold.ttf</string>
+		<string>Fonts/NunitoSans_10pt-ExtraBolditalic.ttf</string>
+		<string>Fonts/NunitoSans_10pt-ExtraLight.ttf</string>
+		<string>Fonts/NunitoSans_10pt-ExtraLightitalic.ttf</string>
+		<string>Fonts/NunitoSans_10pt-Italic.ttf</string>
+		<string>Fonts/NunitoSans_10pt-Light.ttf</string>
+		<string>Fonts/NunitoSans_10pt-Lightitalic.ttf</string>
+		<string>Fonts/NunitoSans_10pt-Medium.ttf</string>
+		<string>Fonts/NunitoSans_10pt-MediumItalic.ttf</string>
+		<string>Fonts/NunitoSans_10pt-Regular.ttf</string>
+		<string>Fonts/NunitoSans_10pt-SemiBold.ttf</string>
+		<string>Fonts/NunitoSans_10pt-SemiBolditalic.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

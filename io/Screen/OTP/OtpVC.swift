@@ -130,8 +130,9 @@ extension UIViewController: UITextFieldDelegate {
 }
 
 // MARK: Hide keyboard
+typealias EmptyHandler = () -> Void
 extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
+    func hideKeyboardWhenTappedAround(compeltion: EmptyHandler? = nil) {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
@@ -139,5 +140,38 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+
+// MARK: UIGestureRecognizer + closure
+extension UIGestureRecognizer {
+    typealias Action = ((UIGestureRecognizer) -> ())
+    
+    private struct Keys {
+        static var actionKey = "ActionKey"
+    }
+    
+    private var block: Action? {
+        set {
+            if let newValue = newValue {
+                // Computed properties get stored as associated objects
+                objc_setAssociatedObject(self, &Keys.actionKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            }
+        }
+        
+        get {
+            let action = objc_getAssociatedObject(self, &Keys.actionKey) as? Action
+            return action
+        }
+    }
+    
+    @objc func handleAction(recognizer: UIGestureRecognizer) {
+        block?(recognizer)
+    }
+    
+    convenience public  init(block: @escaping ((UIGestureRecognizer) -> ())) {
+        self.init()
+        self.block = block
+        self.addTarget(self, action: #selector(handleAction(recognizer:)))
     }
 }

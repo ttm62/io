@@ -21,7 +21,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zs3-Ze-MU3">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="960"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wak-0f-huH">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -116,8 +116,11 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="7Xs-eW-ERD"/>
                                     </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Open Contacts"/>
+                                    <connections>
+                                        <action selector="didTapContacts" destination="-1" eventType="touchUpInside" id="R0n-XL-vjE"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL6-gE-Xxh">
                                     <rect key="frame" x="0.0" y="540" width="414" height="60"/>
@@ -125,7 +128,10 @@
                                         <constraint firstAttribute="height" constant="60" id="20w-P9-xIU"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Fonts"/>
+                                    <connections>
+                                        <action selector="didTapCustomFont" destination="-1" eventType="touchUpInside" id="TUh-IW-Sw9"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3z-hZ-V7X">
                                     <rect key="frame" x="0.0" y="600" width="414" height="60"/>
@@ -133,42 +139,13 @@
                                         <constraint firstAttribute="height" constant="60" id="0Se-aF-b7U"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZT-gb-euf">
-                                    <rect key="frame" x="0.0" y="660" width="414" height="60"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="60" id="Ppp-b0-TDs"/>
-                                    </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzl-8v-wtg">
-                                    <rect key="frame" x="0.0" y="720" width="414" height="60"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="60" id="wJp-B2-HMx"/>
-                                    </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d90-vP-bf3">
-                                    <rect key="frame" x="0.0" y="780" width="414" height="60"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="60" id="chO-Kp-89x"/>
-                                    </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQP-dt-p7v">
-                                    <rect key="frame" x="0.0" y="840" width="414" height="60"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="60" id="wvI-Pd-mqA"/>
-                                    </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Dashed Line"/>
+                                    <connections>
+                                        <action selector="didTapDashedLine" destination="-1" eventType="touchUpInside" id="VjB-ex-haR"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dU7-d1-KVf">
-                                    <rect key="frame" x="0.0" y="900" width="414" height="60"/>
+                                    <rect key="frame" x="0.0" y="660" width="414" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="Vot-Rl-EEU"/>
                                     </constraints>
