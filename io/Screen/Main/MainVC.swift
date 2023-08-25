@@ -8,6 +8,7 @@
 import UIKit
 import Flutter
 import ContactsUI
+import AVFoundation
 
 final
 class MainVC: UIViewController {
@@ -86,6 +87,24 @@ class MainVC: UIViewController {
         push(controller: dashedLineVC)
     }
     
+    @IBAction
+    func didTapPlaySound() {
+        audioPlayer?.play()
+    }
+    
+    var audioPlayer: AVAudioPlayer?
+
+    func setupAudioPlayer() {
+        if let soundURL = Bundle.main.url(forResource: "huy_chuyen", withExtension: "mp3") {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                audioPlayer?.prepareToPlay()
+            } catch {
+                print("Error loading sound: \(error.localizedDescription)")
+            }
+        }
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
@@ -97,6 +116,7 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /* Print all fonts
         for family: String in UIFont.familyNames
         {
             print(family)
@@ -105,6 +125,9 @@ class MainVC: UIViewController {
                 print("== \(names)")
             }
         }
+         */
+        
+        setupAudioPlayer()
         
     }
 }
@@ -114,3 +137,4 @@ extension MainVC: CNContactPickerDelegate {
         print(contact)
     }
 }
+

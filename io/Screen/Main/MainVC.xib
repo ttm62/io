@@ -21,7 +21,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zs3-Ze-MU3">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="840"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wak-0f-huH">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -148,6 +148,25 @@
                                     <rect key="frame" x="0.0" y="660" width="414" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="Vot-Rl-EEU"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Play sound"/>
+                                    <connections>
+                                        <action selector="didTapPlaySound" destination="-1" eventType="touchUpInside" id="LOw-OM-6T9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdc-jy-bZy">
+                                    <rect key="frame" x="0.0" y="720" width="414" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="YOp-sl-lJd"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIo-GR-Mj9">
+                                    <rect key="frame" x="0.0" y="780" width="414" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="esO-oe-a4A"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>

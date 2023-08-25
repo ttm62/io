@@ -48,6 +48,7 @@
 		A4460C242A975E0B007BA6BA /* DashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4460C232A975E0B007BA6BA /* DashedLineView.swift */; };
 		A4460C272A975E55007BA6BA /* DashedLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4460C252A975E55007BA6BA /* DashedLineVC.swift */; };
 		A4460C282A975E55007BA6BA /* DashedLineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4460C262A975E55007BA6BA /* DashedLineVC.xib */; };
+		A46AEAE92A986662005D0281 /* huy_chuyen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A46AEAE82A986662005D0281 /* huy_chuyen.mp3 */; };
 		A477B7BB2A85E4B100A5388A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477B7BA2A85E4B100A5388A /* AppDelegate.swift */; };
 		A477B7C42A85E4B500A5388A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A477B7C32A85E4B500A5388A /* Assets.xcassets */; };
 		A477B7C72A85E4B500A5388A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A477B7C52A85E4B500A5388A /* LaunchScreen.storyboard */; };
@@ -60,6 +61,8 @@
 		A477B7DF2A86117200A5388A /* TableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A477B7DD2A86117200A5388A /* TableVC.xib */; };
 		A477B7E22A86128B00A5388A /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477B7E02A86128B00A5388A /* SampleCell.swift */; };
 		A477B7E32A86128B00A5388A /* SampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A477B7E12A86128B00A5388A /* SampleCell.xib */; };
+		A48232642A98608D00D26680 /* SelectVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48232622A98608D00D26680 /* SelectVehicle.swift */; };
+		A48232652A98608D00D26680 /* SelectVehicle.xib in Resources */ = {isa = PBXBuildFile; fileRef = A48232632A98608D00D26680 /* SelectVehicle.xib */; };
 		A4B64BE72A95A1AF00F4E5EC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B64BE52A95A1AF00F4E5EC /* ChatVC.swift */; };
 		A4B64BE82A95A1AF00F4E5EC /* ChatVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B64BE62A95A1AF00F4E5EC /* ChatVC.xib */; };
 		A4B64BEB2A95ABF700F4E5EC /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B64BE92A95ABF700F4E5EC /* ChatCell.swift */; };
@@ -123,6 +126,7 @@
 		A4460C232A975E0B007BA6BA /* DashedLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLineView.swift; sourceTree = "<group>"; };
 		A4460C252A975E55007BA6BA /* DashedLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLineVC.swift; sourceTree = "<group>"; };
 		A4460C262A975E55007BA6BA /* DashedLineVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashedLineVC.xib; sourceTree = "<group>"; };
+		A46AEAE82A986662005D0281 /* huy_chuyen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = huy_chuyen.mp3; sourceTree = "<group>"; };
 		A477B7B72A85E4B100A5388A /* io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A477B7BA2A85E4B100A5388A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A477B7C32A85E4B500A5388A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 		A477B7DD2A86117200A5388A /* TableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableVC.xib; sourceTree = "<group>"; };
 		A477B7E02A86128B00A5388A /* SampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
 		A477B7E12A86128B00A5388A /* SampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCell.xib; sourceTree = "<group>"; };
+		A48232622A98608D00D26680 /* SelectVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicle.swift; sourceTree = "<group>"; };
+		A48232632A98608D00D26680 /* SelectVehicle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectVehicle.xib; sourceTree = "<group>"; };
 		A4B64BE52A95A1AF00F4E5EC /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		A4B64BE62A95A1AF00F4E5EC /* ChatVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatVC.xib; sourceTree = "<group>"; };
 		A4B64BE92A95ABF700F4E5EC /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
@@ -342,6 +348,7 @@
 				A477B7C32A85E4B500A5388A /* Assets.xcassets */,
 				A477B7C52A85E4B500A5388A /* LaunchScreen.storyboard */,
 				A477B7C82A85E4B500A5388A /* Info.plist */,
+				A46AEAE82A986662005D0281 /* huy_chuyen.mp3 */,
 				A416F3E32A94593900FD4957 /* Fonts */,
 				A477B7D72A85EF8200A5388A /* Utils */,
 				A477B7DA2A86100400A5388A /* Screen */,
@@ -380,6 +387,7 @@
 		A477B7DA2A86100400A5388A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				A48232612A98605A00D26680 /* SelectVehicle */,
 				A4460C292A975E60007BA6BA /* DashedLineVC */,
 				A4460BF22A974618007BA6BA /* Fonts */,
 				A4B64BFE2A960D0900F4E5EC /* CustomViews */,
@@ -409,6 +417,15 @@
 				A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */,
 			);
 			path = Table;
+			sourceTree = "<group>";
+		};
+		A48232612A98605A00D26680 /* SelectVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				A48232622A98608D00D26680 /* SelectVehicle.swift */,
+				A48232632A98608D00D26680 /* SelectVehicle.xib */,
+			);
+			path = SelectVehicle;
 			sourceTree = "<group>";
 		};
 		A4B64BE42A95A18D00F4E5EC /* Chat */ = {
@@ -558,6 +575,7 @@
 				A4460BF62A974630007BA6BA /* FontVC.xib in Resources */,
 				A4460C212A975C4E007BA6BA /* NunitoSans-Italic.ttf in Resources */,
 				A477B7D12A85E65700A5388A /* MainVC.xib in Resources */,
+				A46AEAE92A986662005D0281 /* huy_chuyen.mp3 in Resources */,
 				A4B64BF12A95C2D900F4E5EC /* MeChatCell.xib in Resources */,
 				A40ED9422A89DA54006EF1BE /* PagesCell.xib in Resources */,
 				A43894CC2A936AAE00BE77A6 /* DriverNoteCell.xib in Resources */,
@@ -573,6 +591,7 @@
 				A438949D2A9303C700BE77A6 /* StretchyView.xib in Resources */,
 				A43894C72A93692200BE77A6 /* BigButtonCell.xib in Resources */,
 				A4B64BEC2A95ABF700F4E5EC /* ChatCell.xib in Resources */,
+				A48232652A98608D00D26680 /* SelectVehicle.xib in Resources */,
 				A477B7C42A85E4B500A5388A /* Assets.xcassets in Resources */,
 				A4EA23BA2A8B876D0031E8BC /* RecommendGridCell.xib in Resources */,
 			);
@@ -702,6 +721,7 @@
 				A4B64BEB2A95ABF700F4E5EC /* ChatCell.swift in Sources */,
 				A477B7D32A85E9CD00A5388A /* SceneDelegate.swift in Sources */,
 				A416F3D72A9454D200FD4957 /* NSObject+Extensions.swift in Sources */,
+				A48232642A98608D00D26680 /* SelectVehicle.swift in Sources */,
 				A438949B2A9303BF00BE77A6 /* StretchyView.swift in Sources */,
 				A416F3CB2A94528600FD4957 /* BottomSheetTransitioningDelegate.swift in Sources */,
 				A43894C62A93692200BE77A6 /* BigButtonCell.swift in Sources */,
