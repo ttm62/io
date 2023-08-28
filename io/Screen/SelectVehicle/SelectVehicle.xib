@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectVehicle" customModule="io" customModuleProvider="target">
             <connections>
+                <outlet property="bottomView" destination="SlM-xE-9Y8" id="bUz-Es-Sh7"/>
+                <outlet property="mapView" destination="acN-c6-JEv" id="muA-hN-gjw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

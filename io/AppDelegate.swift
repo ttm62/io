@@ -9,6 +9,7 @@ import UIKit
 import Flutter
 import FlutterPluginRegistrant
 import GoogleMaps
+import KeyboardDismisser
 
 @main
 class AppDelegate: FlutterAppDelegate {
@@ -33,6 +34,8 @@ class AppDelegate: FlutterAppDelegate {
         // flutter init
         flutterEngine.run()
         GeneratedPluginRegistrant.register(with: self.flutterEngine)
+        
+        KeyboardDismisser.shared.attach()
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 }

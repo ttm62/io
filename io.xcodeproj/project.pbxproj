@@ -76,6 +76,9 @@
 		A4B64C012A960D2E00F4E5EC /* CustomViewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B64BFF2A960D2E00F4E5EC /* CustomViewsVC.swift */; };
 		A4B64C022A960D2E00F4E5EC /* CustomViewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B64C002A960D2E00F4E5EC /* CustomViewsVC.xib */; };
 		A4B8F9C52A8A1CB3001CA71C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8F9C42A8A1CB3001CA71C /* UIView.swift */; };
+		A4E9CF882A9C46300066C947 /* DestinationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9CF862A9C46300066C947 /* DestinationVC.swift */; };
+		A4E9CF892A9C46300066C947 /* DestinationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E9CF872A9C46300066C947 /* DestinationVC.xib */; };
+		A4E9CF8D2A9C90B40066C947 /* location_drop.json in Resources */ = {isa = PBXBuildFile; fileRef = A4E9CF8C2A9C90B40066C947 /* location_drop.json */; };
 		A4EA23B22A8B834A0031E8BC /* StretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B12A8B834A0031E8BC /* StretchyHeader.swift */; };
 		A4EA23B52A8B85D70031E8BC /* RecommendGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B32A8B85D70031E8BC /* RecommendGrid.swift */; };
 		A4EA23B62A8B85D70031E8BC /* RecommendGrid.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA23B42A8B85D70031E8BC /* RecommendGrid.xib */; };
@@ -156,6 +159,9 @@
 		A4B64BFF2A960D2E00F4E5EC /* CustomViewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewsVC.swift; sourceTree = "<group>"; };
 		A4B64C002A960D2E00F4E5EC /* CustomViewsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewsVC.xib; sourceTree = "<group>"; };
 		A4B8F9C42A8A1CB3001CA71C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A4E9CF862A9C46300066C947 /* DestinationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationVC.swift; sourceTree = "<group>"; };
+		A4E9CF872A9C46300066C947 /* DestinationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationVC.xib; sourceTree = "<group>"; };
+		A4E9CF8C2A9C90B40066C947 /* location_drop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location_drop.json; sourceTree = "<group>"; };
 		A4EA23B12A8B834A0031E8BC /* StretchyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeader.swift; sourceTree = "<group>"; };
 		A4EA23B32A8B85D70031E8BC /* RecommendGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGrid.swift; sourceTree = "<group>"; };
 		A4EA23B42A8B85D70031E8BC /* RecommendGrid.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGrid.xib; sourceTree = "<group>"; };
@@ -349,6 +355,7 @@
 				A477B7C52A85E4B500A5388A /* LaunchScreen.storyboard */,
 				A477B7C82A85E4B500A5388A /* Info.plist */,
 				A46AEAE82A986662005D0281 /* huy_chuyen.mp3 */,
+				A4E9CF8C2A9C90B40066C947 /* location_drop.json */,
 				A416F3E32A94593900FD4957 /* Fonts */,
 				A477B7D72A85EF8200A5388A /* Utils */,
 				A477B7DA2A86100400A5388A /* Screen */,
@@ -387,6 +394,7 @@
 		A477B7DA2A86100400A5388A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				A4E9CF852A9C45B30066C947 /* Destination */,
 				A48232612A98605A00D26680 /* SelectVehicle */,
 				A4460C292A975E60007BA6BA /* DashedLineVC */,
 				A4460BF22A974618007BA6BA /* Fonts */,
@@ -486,6 +494,15 @@
 			path = GVInput;
 			sourceTree = "<group>";
 		};
+		A4E9CF852A9C45B30066C947 /* Destination */ = {
+			isa = PBXGroup;
+			children = (
+				A4E9CF862A9C46300066C947 /* DestinationVC.swift */,
+				A4E9CF872A9C46300066C947 /* DestinationVC.xib */,
+			);
+			path = Destination;
+			sourceTree = "<group>";
+		};
 		BA4980877D16988C1F897AA5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,6 +594,7 @@
 				A477B7D12A85E65700A5388A /* MainVC.xib in Resources */,
 				A46AEAE92A986662005D0281 /* huy_chuyen.mp3 in Resources */,
 				A4B64BF12A95C2D900F4E5EC /* MeChatCell.xib in Resources */,
+				A4E9CF8D2A9C90B40066C947 /* location_drop.json in Resources */,
 				A40ED9422A89DA54006EF1BE /* PagesCell.xib in Resources */,
 				A43894CC2A936AAE00BE77A6 /* DriverNoteCell.xib in Resources */,
 				A477B7DF2A86117200A5388A /* TableVC.xib in Resources */,
@@ -585,6 +603,7 @@
 				A4B64BE82A95A1AF00F4E5EC /* ChatVC.xib in Resources */,
 				A43894AD2A93523200BE77A6 /* MapVC.xib in Resources */,
 				A4460C282A975E55007BA6BA /* DashedLineVC.xib in Resources */,
+				A4E9CF892A9C46300066C947 /* DestinationVC.xib in Resources */,
 				A416F3D12A94532000FD4957 /* SetTimeForRide.xib in Resources */,
 				A40ED9472A89DF4F006EF1BE /* OtpVC.xib in Resources */,
 				A477B7C72A85E4B500A5388A /* LaunchScreen.storyboard in Resources */,
@@ -718,6 +737,7 @@
 				A416F3EB2A946AB400FD4957 /* Collection.swift in Sources */,
 				A4B64C012A960D2E00F4E5EC /* CustomViewsVC.swift in Sources */,
 				A40ED9462A89DF4F006EF1BE /* OtpVC.swift in Sources */,
+				A4E9CF882A9C46300066C947 /* DestinationVC.swift in Sources */,
 				A4B64BEB2A95ABF700F4E5EC /* ChatCell.swift in Sources */,
 				A477B7D32A85E9CD00A5388A /* SceneDelegate.swift in Sources */,
 				A416F3D72A9454D200FD4957 /* NSObject+Extensions.swift in Sources */,

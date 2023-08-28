@@ -16,6 +16,8 @@ target 'io' do
   pod 'IBPCollectionViewCompositionalLayout'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'KeyboardDismisser'
+  pod 'lottie-ios', '3.2.3' 
 
   install_all_flutter_pods(flutter_application_path)
 end

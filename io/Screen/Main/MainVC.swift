@@ -92,6 +92,18 @@ class MainVC: UIViewController {
         audioPlayer?.play()
     }
     
+    @IBAction
+    func didTapSelectVehicle() {
+        let selectVC = SelectVehicle.loadFromNib()
+        push(controller: selectVC)
+    }
+    
+    @IBAction
+    func didTapDestination() {
+        let destinationVC = DestinationVC.loadFromNib()
+        push(controller: destinationVC)
+    }
+    
     var audioPlayer: AVAudioPlayer?
 
     func setupAudioPlayer() {
