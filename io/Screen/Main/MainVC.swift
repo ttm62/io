@@ -116,6 +116,18 @@ class MainVC: UIViewController {
         push(controller: tagVC)
     }
     
+    @IBAction
+    func didTapConfirmDestination() {
+        let confirmDestinationVC = ConfirmDestinationVC.loadFromNib()
+        push(controller: confirmDestinationVC)
+    }
+    
+    @IBAction
+    func didTapITSCBlock() {
+        let ITSCBlockVC = ITSCBlockVC.loadFromNib()
+        push(controller: ITSCBlockVC)
+    }
+    
     var audioPlayer: AVAudioPlayer?
 
     func setupAudioPlayer() {

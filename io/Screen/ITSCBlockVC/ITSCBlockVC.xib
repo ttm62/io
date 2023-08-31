@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22152" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22127"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITSCBlockVC" customModule="io" customModuleProvider="target">
+            <connections>
+                <outlet property="block1" destination="WnS-ZN-A95" id="AUQ-9a-Idk"/>
+                <outlet property="block2" destination="skZ-Ws-2SZ" id="N5v-r9-3O8"/>
+                <outlet property="block3" destination="X58-yW-P0A" id="Uxy-B9-wdE"/>
+                <outlet property="block4" destination="gYY-oN-LEr" id="Cp9-g6-fGQ"/>
+                <outlet property="block5" destination="HgG-QR-wgH" id="f2n-vt-Vkr"/>
+                <outlet property="block6" destination="d2k-1S-aaT" id="DTu-kS-tLI"/>
+                <outlet property="block7" destination="dH7-vK-1VI" id="mfJ-3t-SOj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A5S-6V-gxV">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnS-ZN-A95" customClass="ITSCBlock" customModule="io" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="0p4-Ct-WEh"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skZ-Ws-2SZ" customClass="ITSCBlock" customModule="io" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="80" width="393" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="q6k-in-chV"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X58-yW-P0A" customClass="ITSCBlock" customModule="io" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="160" width="393" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="mL6-PH-LhS"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYY-oN-LEr" customClass="ITSCBlock" customModule="io" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="240" width="393" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="G0q-7I-cmj"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgG-QR-wgH" customClass="ITSCBlock" customModule="io" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="320" width="393" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="2tp-37-JK0"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2k-1S-aaT" customClass="ITSCBlock" customModule="io" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="400" width="393" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="Iqc-99-4bE"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dH7-vK-1VI" customClass="ITSCBlock" customModule="io" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="480" width="393" height="80"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="Cpb-WC-8ps"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwG-Ba-7Y0">
+                            <rect key="frame" x="0.0" y="560" width="393" height="199"/>
+                            <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="A5S-6V-gxV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Pbe-co-4Ak"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="A5S-6V-gxV" secondAttribute="bottom" id="dbX-eU-fJN"/>
+                <constraint firstItem="A5S-6V-gxV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iTn-wH-IcY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A5S-6V-gxV" secondAttribute="trailing" id="p8K-3e-jPv"/>
+            </constraints>
+            <point key="canvasLocation" x="-24" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

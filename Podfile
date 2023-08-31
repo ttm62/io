@@ -19,6 +19,7 @@ target 'io' do
   pod 'KeyboardDismisser'
   pod 'lottie-ios', '3.2.3'
   pod 'DPOTPView'
+  pod 'RichString'
 
   install_all_flutter_pods(flutter_application_path)
 end
