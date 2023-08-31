@@ -104,6 +104,18 @@ class MainVC: UIViewController {
         push(controller: destinationVC)
     }
     
+    @IBAction
+    func didTapStateConfig() {
+        let stateConfigVC = StateConfigVC.loadFromNib()
+        push(controller: stateConfigVC)
+    }
+    
+    @IBAction
+    func didTapTags() {
+        let tagVC = TagVC.loadFromNib()
+        push(controller: tagVC)
+    }
+    
     var audioPlayer: AVAudioPlayer?
 
     func setupAudioPlayer() {

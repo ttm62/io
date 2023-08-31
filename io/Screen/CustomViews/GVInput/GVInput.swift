@@ -25,65 +25,74 @@ extension String {
 }
 
 extension UIColor {
-    static var neutral01: UIColor = .init(hex: "#F4F4FF") ?? .clear
-    static var neutral02: UIColor = .init(hex: "#E2E2F1") ?? .clear
-    static var neutral03: UIColor = .init(hex: "#СВСВЕ4") ?? .clear
-    static var neutral04: UIColor = .init(hex: "#B1B1D0") ?? .clear
-    static var neutral05: UIColor = .init(hex: "#9B9BB9") ?? .clear
-    static var neutral06: UIColor = .init(hex: "#8585A3") ?? .clear
-    static var neutral07: UIColor = .init(hex: "#70708C") ?? .clear
-    static var neutral08: UIColor = .init(hex: "#5C5C75") ?? .clear
-    static var neutral09: UIColor = .init(hex: "#48485F") ?? .clear
-    static var neutral10: UIColor = .init(hex: "#363648") ?? .clear
-    static var neutral11: UIColor = .init(hex: "#252532") ?? .clear
+    convenience public init(hex: Int, alpha: CGFloat = 1.0) {
+        let red = CGFloat((hex & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((hex & 0xFF00) >> 8) / 255.0
+        let blue = CGFloat((hex & 0xFF)) / 255.0
+        self.init(red:red, green:green, blue:blue, alpha:alpha)
+    }
+}
+
+extension UIColor {
+    static var neutral01: UIColor? = .init(hex: 0xF4F4FF)
+    static var neutral02: UIColor? = .init(hex: 0xE2E2F1)
+    static var neutral03: UIColor? = .init(hex: 0xCBCBE4)
+    static var neutral04: UIColor? = .init(hex: 0xB1B1D0)
+    static var neutral05: UIColor? = .init(hex: 0x9B9BB9)
+    static var neutral06: UIColor? = .init(hex: 0x8585A3)
+    static var neutral07: UIColor? = .init(hex: 0x70708C)
+    static var neutral08: UIColor? = .init(hex: 0x5C5C75)
+    static var neutral09: UIColor? = .init(hex: 0x48485F)
+    static var neutral10: UIColor? = .init(hex: 0x363648)
+    static var neutral11: UIColor? = .init(hex: 0x252532)
     
-    static var blue01: UIColor = .init(hex: "#EEFAFF") ?? .clear
-    static var blue02: UIColor = .init(hex: "#CCF1FF") ?? .clear
-    static var blue03: UIColor = .init(hex: "#99DEFF") ?? .clear
-    static var blue04: UIColor = .init(hex: "#66C5FF") ?? .clear
-    static var blue05: UIColor = .init(hex: "#3FADFF") ?? .clear
-    static var blue06: UIColor = .init(hex: "#0085FF") ?? .clear
-    static var blue07: UIColor = .init(hex: "#0066DB") ?? .clear
-    static var blue08: UIColor = .init(hex: "#004CB7") ?? .clear
-    static var blue09: UIColor = .init(hex: "#003693") ?? .clear
-    static var blue10: UIColor = .init(hex: "#00267A") ?? .clear
-    static var blue11: UIColor = .init(hex: "#001645") ?? .clear
+    static var blue01: UIColor? = .init(hex: 0xEEFAFF)
+    static var blue02: UIColor? = .init(hex: 0xCCF1FF)
+    static var blue03: UIColor? = .init(hex: 0x99DEFF)
+    static var blue04: UIColor? = .init(hex: 0x66C5FF)
+    static var blue05: UIColor? = .init(hex: 0x3FADFF)
+    static var blue06: UIColor? = .init(hex: 0x0085FF)
+    static var blue07: UIColor? = .init(hex: 0x0066DB)
+    static var blue08: UIColor? = .init(hex: 0x004CB7)
+    static var blue09: UIColor? = .init(hex: 0x003693)
+    static var blue10: UIColor? = .init(hex: 0x00267A)
+    static var blue11: UIColor? = .init(hex: 0x001645)
     
-    static var gray01: UIColor = .init(hex: "#FBFBFB") ?? .clear
-    static var gray02: UIColor = .init(hex: "#EZEZE7") ?? .clear
-    static var gray03: UIColor = .init(hex: "#D3D3D3") ?? .clear
-    static var gray04: UIColor = .init(hex: "#ВЕВЕВЕ") ?? .clear
-    static var gray05: UIColor = .init(hex: "#AAAAAA") ?? .clear
-    static var gray06: UIColor = .init(hex: "#959595") ?? .clear
-    static var gray07: UIColor = .init(hex: "#818181") ?? .clear
-    static var gray08: UIColor = .init(hex: "#6D6B6B") ?? .clear
-    static var gray09: UIColor = .init(hex: "#585555") ?? .clear
-    static var gray10: UIColor = .init(hex: "#444040") ?? .clear
-    static var gray11: UIColor = .init(hex: "#242424") ?? .clear
+    static var gray01: UIColor? = .init(hex: 0xFBFBFB)
+    static var gray02: UIColor? = .init(hex: 0xE7E7E7)
+    static var gray03: UIColor? = .init(hex: 0xD3D3D3)
+    static var gray04: UIColor? = .init(hex: 0xBEBEBE)
+    static var gray05: UIColor? = .init(hex: 0xAAAAAA)
+    static var gray06: UIColor? = .init(hex: 0x959595)
+    static var gray07: UIColor? = .init(hex: 0x818181)
+    static var gray08: UIColor? = .init(hex: 0x6D6B6B)
+    static var gray09: UIColor? = .init(hex: 0x585555)
+    static var gray10: UIColor? = .init(hex: 0x444040)
+    static var gray11: UIColor? = .init(hex: 0x242424)
     
-    static var red01: UIColor = .init(hex:"#FFE9E9") ?? .clear
-    static var red02: UIColor = .init(hex:"#FEC3C3") ?? .clear
-    static var red03: UIColor = .init(hex:"#FF8686") ?? .clear
-    static var red04: UIColor = .init(hex:"#FF6363") ?? .clear
-    static var red05: UIColor = .init(hex:"#FF3838") ?? .clear
-    static var red06: UIColor = .init(hex:"#FFOAOA") ?? .clear
-    static var red07: UIColor = .init(hex:"#DB0707") ?? .clear
-    static var red08: UIColor = .init(hex:"#B70505") ?? .clear
-    static var red09: UIColor = .init(hex:"#930303") ?? .clear
-    static var red10: UIColor = .init(hex:"#7A0101") ?? .clear
-    static var red11: UIColor = .init(hex:"#5C0011") ?? .clear
+    static var red01: UIColor? = .init(hex: 0xFFE9E9)
+    static var red02: UIColor? = .init(hex: 0xFEC3C3)
+    static var red03: UIColor? = .init(hex: 0xFF8686)
+    static var red04: UIColor? = .init(hex: 0xFF6363)
+    static var red05: UIColor? = .init(hex: 0xFF3838)
+    static var red06: UIColor? = .init(hex: 0xFF0A0A)
+    static var red07: UIColor? = .init(hex: 0xDB0707)
+    static var red08: UIColor? = .init(hex: 0xB70505)
+    static var red09: UIColor? = .init(hex: 0x930303)
+    static var red10: UIColor? = .init(hex: 0x7A0101)
+    static var red11: UIColor? = .init(hex: 0x5C0011)
     
-    static var primary01: UIColor = .init(hex: "#F2F6FF") ?? .clear
-    static var primary02: UIColor = .init(hex: "#D7E2FF") ?? .clear
-    static var primary03: UIColor = .init(hex: "#BBCEFF") ?? .clear
-    static var primary04: UIColor = .init(hex: "#9FBAFF") ?? .clear
-    static var primary05: UIColor = .init(hex: "#83A6FF") ?? .clear
-    static var primary06: UIColor = .init(hex: "#6789DF") ?? .clear
-    static var primary07: UIColor = .init(hex: "#4D6CBD") ?? .clear
-    static var primary08: UIColor = .init(hex: "#37539B") ?? .clear
-    static var primary09: UIColor = .init(hex: "#243C79") ?? .clear
-    static var primary10: UIColor = .init(hex: "#162857") ?? .clear
-    static var primary11: UIColor = .init(hex: "#000E31") ?? .clear
+    static var primary01: UIColor? = .init(hex: 0xF2F6FF)
+    static var primary02: UIColor? = .init(hex: 0xD7E2FF)
+    static var primary03: UIColor? = .init(hex: 0xBBCEFF)
+    static var primary04: UIColor? = .init(hex: 0x9FBAFF)
+    static var primary05: UIColor? = .init(hex: 0x83A6FF)
+    static var primary06: UIColor? = .init(hex: 0x6789DF)
+    static var primary07: UIColor? = .init(hex: 0x4D6CBD)
+    static var primary08: UIColor? = .init(hex: 0x37539B)
+    static var primary09: UIColor? = .init(hex: 0x243C79)
+    static var primary10: UIColor? = .init(hex: 0x162857)
+    static var primary11: UIColor? = .init(hex: 0x000E31)
 }
 
 @IBDesignable

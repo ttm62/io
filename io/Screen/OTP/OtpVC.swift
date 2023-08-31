@@ -6,12 +6,12 @@
 //
 
 import UIKit
-import AEOTPTextField
+// import AEOTPTextField
 
 final
 class OtpVC: UIViewController {
     
-    @IBOutlet weak var otpField: AEOTPTextField!
+    // @IBOutlet weak var otpField: AEOTPTextField!
     @IBOutlet weak var bottomViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var otpCountDown: UILabel!
     
@@ -28,11 +28,11 @@ class OtpVC: UIViewController {
         hideKeyboardWhenTappedAround()
         configKeyboardNotification(for: bottomViewConstraint)
         
-        otpField.delegate = self
-        otpField.otpFont = .systemFont(ofSize: 20)
-        otpField.configure(with: 4)
-        otpField.backgroundColor = .clear
-        otpField.otpTextColor = .black
+//        otpField.delegate = self
+//        otpField.otpFont = .systemFont(ofSize: 20)
+//        otpField.configure(with: 4)
+//        otpField.backgroundColor = .clear
+//        otpField.otpTextColor = .black
         
         self.timer = Timer.scheduledTimer(
             timeInterval: 1,

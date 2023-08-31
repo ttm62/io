@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D48FD471404B37B20B737BB /* Pods_io.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8A5C631F23680B8F4F616 /* Pods_io.framework */; };
+		A40E8D162A9DE01000A84018 /* StateConfigVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E8D142A9DE01000A84018 /* StateConfigVC.swift */; };
+		A40E8D172A9DE01000A84018 /* StateConfigVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40E8D152A9DE01000A84018 /* StateConfigVC.xib */; };
 		A40ED9412A89DA54006EF1BE /* PagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40ED93F2A89DA54006EF1BE /* PagesCell.swift */; };
 		A40ED9422A89DA54006EF1BE /* PagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40ED9402A89DA54006EF1BE /* PagesCell.xib */; };
 		A40ED9462A89DF4F006EF1BE /* OtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40ED9442A89DF4F006EF1BE /* OtpVC.swift */; };
@@ -40,7 +42,6 @@
 		A43894C72A93692200BE77A6 /* BigButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43894C52A93692200BE77A6 /* BigButtonCell.xib */; };
 		A43894CB2A936AAE00BE77A6 /* DriverNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43894C92A936AAE00BE77A6 /* DriverNoteCell.swift */; };
 		A43894CC2A936AAE00BE77A6 /* DriverNoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43894CA2A936AAE00BE77A6 /* DriverNoteCell.xib */; };
-		A4460BED2A9719BD007BA6BA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4460BEC2A9719BD007BA6BA /* UIColor.swift */; };
 		A4460BF52A974630007BA6BA /* FontVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4460BF32A974630007BA6BA /* FontVC.swift */; };
 		A4460BF62A974630007BA6BA /* FontVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4460BF42A974630007BA6BA /* FontVC.xib */; };
 		A4460C212A975C4E007BA6BA /* NunitoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4460C1F2A975C4E007BA6BA /* NunitoSans-Italic.ttf */; };
@@ -63,6 +64,8 @@
 		A477B7E32A86128B00A5388A /* SampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A477B7E12A86128B00A5388A /* SampleCell.xib */; };
 		A48232642A98608D00D26680 /* SelectVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48232622A98608D00D26680 /* SelectVehicle.swift */; };
 		A48232652A98608D00D26680 /* SelectVehicle.xib in Resources */ = {isa = PBXBuildFile; fileRef = A48232632A98608D00D26680 /* SelectVehicle.xib */; };
+		A49B9FD02A9EFF23002DC538 /* OTPPinEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B9FCF2A9EFF23002DC538 /* OTPPinEntryView.swift */; };
+		A49B9FD22A9EFF3C002DC538 /* OPTPinEntryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B9FD12A9EFF3C002DC538 /* OPTPinEntryTextField.swift */; };
 		A4B64BE72A95A1AF00F4E5EC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B64BE52A95A1AF00F4E5EC /* ChatVC.swift */; };
 		A4B64BE82A95A1AF00F4E5EC /* ChatVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B64BE62A95A1AF00F4E5EC /* ChatVC.xib */; };
 		A4B64BEB2A95ABF700F4E5EC /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B64BE92A95ABF700F4E5EC /* ChatCell.swift */; };
@@ -85,10 +88,18 @@
 		A4EA23B92A8B876D0031E8BC /* RecommendGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23B72A8B876D0031E8BC /* RecommendGridCell.swift */; };
 		A4EA23BA2A8B876D0031E8BC /* RecommendGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */; };
 		A4EA23BC2A8B8A040031E8BC /* SelfSizingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA23BB2A8B8A040031E8BC /* SelfSizingTable.swift */; };
+		A4EE10892AA03F35002A9A62 /* TagListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EE10882AA03F35002A9A62 /* TagListView.xib */; };
+		A4EE108B2AA03F3F002A9A62 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE108A2AA03F3F002A9A62 /* TagListView.swift */; };
+		A4EE108F2AA04983002A9A62 /* TagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE108D2AA04983002A9A62 /* TagVC.swift */; };
+		A4EE10902AA04983002A9A62 /* TagVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EE108E2AA04983002A9A62 /* TagVC.xib */; };
+		A4EE10942AA04A6A002A9A62 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE10922AA04A6A002A9A62 /* TagCell.swift */; };
+		A4EE10952AA04A6A002A9A62 /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4EE10932AA04A6A002A9A62 /* TagCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48F6FB8B8B9F518C82FCBD47 /* Pods-io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-io.release.xcconfig"; path = "Target Support Files/Pods-io/Pods-io.release.xcconfig"; sourceTree = "<group>"; };
+		A40E8D142A9DE01000A84018 /* StateConfigVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateConfigVC.swift; sourceTree = "<group>"; };
+		A40E8D152A9DE01000A84018 /* StateConfigVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StateConfigVC.xib; sourceTree = "<group>"; };
 		A40ED93F2A89DA54006EF1BE /* PagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesCell.swift; sourceTree = "<group>"; };
 		A40ED9402A89DA54006EF1BE /* PagesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagesCell.xib; sourceTree = "<group>"; };
 		A40ED9442A89DF4F006EF1BE /* OtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpVC.swift; sourceTree = "<group>"; };
@@ -121,7 +132,6 @@
 		A43894C52A93692200BE77A6 /* BigButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigButtonCell.xib; sourceTree = "<group>"; };
 		A43894C92A936AAE00BE77A6 /* DriverNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverNoteCell.swift; sourceTree = "<group>"; };
 		A43894CA2A936AAE00BE77A6 /* DriverNoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverNoteCell.xib; sourceTree = "<group>"; };
-		A4460BEC2A9719BD007BA6BA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A4460BF32A974630007BA6BA /* FontVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontVC.swift; sourceTree = "<group>"; };
 		A4460BF42A974630007BA6BA /* FontVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontVC.xib; sourceTree = "<group>"; };
 		A4460C1F2A975C4E007BA6BA /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
@@ -146,6 +156,8 @@
 		A477B7E12A86128B00A5388A /* SampleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCell.xib; sourceTree = "<group>"; };
 		A48232622A98608D00D26680 /* SelectVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicle.swift; sourceTree = "<group>"; };
 		A48232632A98608D00D26680 /* SelectVehicle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectVehicle.xib; sourceTree = "<group>"; };
+		A49B9FCF2A9EFF23002DC538 /* OTPPinEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPPinEntryView.swift; sourceTree = "<group>"; };
+		A49B9FD12A9EFF3C002DC538 /* OPTPinEntryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPTPinEntryTextField.swift; sourceTree = "<group>"; };
 		A4B64BE52A95A1AF00F4E5EC /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		A4B64BE62A95A1AF00F4E5EC /* ChatVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatVC.xib; sourceTree = "<group>"; };
 		A4B64BE92A95ABF700F4E5EC /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
@@ -168,6 +180,12 @@
 		A4EA23B72A8B876D0031E8BC /* RecommendGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGridCell.swift; sourceTree = "<group>"; };
 		A4EA23B82A8B876D0031E8BC /* RecommendGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGridCell.xib; sourceTree = "<group>"; };
 		A4EA23BB2A8B8A040031E8BC /* SelfSizingTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTable.swift; sourceTree = "<group>"; };
+		A4EE10882AA03F35002A9A62 /* TagListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagListView.xib; sourceTree = "<group>"; };
+		A4EE108A2AA03F3F002A9A62 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		A4EE108D2AA04983002A9A62 /* TagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagVC.swift; sourceTree = "<group>"; };
+		A4EE108E2AA04983002A9A62 /* TagVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagVC.xib; sourceTree = "<group>"; };
+		A4EE10922AA04A6A002A9A62 /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		A4EE10932AA04A6A002A9A62 /* TagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
 		D3E8A5C631F23680B8F4F616 /* Pods_io.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_io.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0633524B1D7EF53C79808B0 /* Pods-io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-io.debug.xcconfig"; path = "Target Support Files/Pods-io/Pods-io.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +202,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A40E8D132A9DDFFD00A84018 /* StateConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A40E8D142A9DE01000A84018 /* StateConfigVC.swift */,
+				A40E8D152A9DE01000A84018 /* StateConfigVC.xib */,
+			);
+			path = StateConfig;
+			sourceTree = "<group>";
+		};
 		A40ED9432A89DF20006EF1BE /* OTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,8 +412,8 @@
 				A43894A02A93053C00BE77A6 /* Bundle.swift */,
 				A416F3E82A94660E00FD4957 /* DateHelper.swift */,
 				A416F3EA2A946AB400FD4957 /* Collection.swift */,
-				A4460BEC2A9719BD007BA6BA /* UIColor.swift */,
 				A4460C232A975E0B007BA6BA /* DashedLineView.swift */,
+				A49B9FCE2A9EFF0D002DC538 /* OTPField */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -394,6 +421,8 @@
 		A477B7DA2A86100400A5388A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				A4EE108C2AA04962002A9A62 /* TagVC */,
+				A40E8D132A9DDFFD00A84018 /* StateConfig */,
 				A4E9CF852A9C45B30066C947 /* Destination */,
 				A48232612A98605A00D26680 /* SelectVehicle */,
 				A4460C292A975E60007BA6BA /* DashedLineVC */,
@@ -434,6 +463,15 @@
 				A48232632A98608D00D26680 /* SelectVehicle.xib */,
 			);
 			path = SelectVehicle;
+			sourceTree = "<group>";
+		};
+		A49B9FCE2A9EFF0D002DC538 /* OTPField */ = {
+			isa = PBXGroup;
+			children = (
+				A49B9FCF2A9EFF23002DC538 /* OTPPinEntryView.swift */,
+				A49B9FD12A9EFF3C002DC538 /* OPTPinEntryTextField.swift */,
+			);
+			path = OTPField;
 			sourceTree = "<group>";
 		};
 		A4B64BE42A95A18D00F4E5EC /* Chat */ = {
@@ -478,6 +516,7 @@
 		A4B64BFE2A960D0900F4E5EC /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A4EE10872AA03F17002A9A62 /* TagListView */,
 				A4B64C032A960D3C00F4E5EC /* GVInput */,
 				A4B64BFF2A960D2E00F4E5EC /* CustomViewsVC.swift */,
 				A4B64C002A960D2E00F4E5EC /* CustomViewsVC.xib */,
@@ -501,6 +540,34 @@
 				A4E9CF872A9C46300066C947 /* DestinationVC.xib */,
 			);
 			path = Destination;
+			sourceTree = "<group>";
+		};
+		A4EE10872AA03F17002A9A62 /* TagListView */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE10882AA03F35002A9A62 /* TagListView.xib */,
+				A4EE108A2AA03F3F002A9A62 /* TagListView.swift */,
+			);
+			path = TagListView;
+			sourceTree = "<group>";
+		};
+		A4EE108C2AA04962002A9A62 /* TagVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE10912AA04A5A002A9A62 /* TagCell */,
+				A4EE108D2AA04983002A9A62 /* TagVC.swift */,
+				A4EE108E2AA04983002A9A62 /* TagVC.xib */,
+			);
+			path = TagVC;
+			sourceTree = "<group>";
+		};
+		A4EE10912AA04A5A002A9A62 /* TagCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE10922AA04A6A002A9A62 /* TagCell.swift */,
+				A4EE10932AA04A6A002A9A62 /* TagCell.xib */,
+			);
+			path = TagCell;
 			sourceTree = "<group>";
 		};
 		BA4980877D16988C1F897AA5 /* Pods */ = {
@@ -587,6 +654,7 @@
 				A4B64BFB2A96061000F4E5EC /* GVInput.xib in Resources */,
 				A4460C222A975C4E007BA6BA /* NunitoSans.ttf in Resources */,
 				A43894A52A93070F00BE77A6 /* AnotherSampleCell.xib in Resources */,
+				A4EE10952AA04A6A002A9A62 /* TagCell.xib in Resources */,
 				A4B64BF52A95C2EC00F4E5EC /* OtherChatCell.xib in Resources */,
 				A477B7E32A86128B00A5388A /* SampleCell.xib in Resources */,
 				A4460BF62A974630007BA6BA /* FontVC.xib in Resources */,
@@ -601,7 +669,10 @@
 				A4EA23B62A8B85D70031E8BC /* RecommendGrid.xib in Resources */,
 				A4B64C022A960D2E00F4E5EC /* CustomViewsVC.xib in Resources */,
 				A4B64BE82A95A1AF00F4E5EC /* ChatVC.xib in Resources */,
+				A40E8D172A9DE01000A84018 /* StateConfigVC.xib in Resources */,
+				A4EE10892AA03F35002A9A62 /* TagListView.xib in Resources */,
 				A43894AD2A93523200BE77A6 /* MapVC.xib in Resources */,
+				A4EE10902AA04983002A9A62 /* TagVC.xib in Resources */,
 				A4460C282A975E55007BA6BA /* DashedLineVC.xib in Resources */,
 				A4E9CF892A9C46300066C947 /* DestinationVC.xib in Resources */,
 				A416F3D12A94532000FD4957 /* SetTimeForRide.xib in Resources */,
@@ -702,9 +773,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49B9FD22A9EFF3C002DC538 /* OPTPinEntryTextField.swift in Sources */,
 				A4B64BE72A95A1AF00F4E5EC /* ChatVC.swift in Sources */,
 				A4460BF52A974630007BA6BA /* FontVC.swift in Sources */,
-				A4460BED2A9719BD007BA6BA /* UIColor.swift in Sources */,
+				A4EE108F2AA04983002A9A62 /* TagVC.swift in Sources */,
 				A416F3DE2A9454DF00FD4957 /* UIImageView+Extensions.swift in Sources */,
 				A43894972A93030300BE77A6 /* StretchyVC.swift in Sources */,
 				A43894A12A93053C00BE77A6 /* Bundle.swift in Sources */,
@@ -727,11 +799,14 @@
 				A4EA23B52A8B85D70031E8BC /* RecommendGrid.swift in Sources */,
 				A4EA23B92A8B876D0031E8BC /* RecommendGridCell.swift in Sources */,
 				A40ED9412A89DA54006EF1BE /* PagesCell.swift in Sources */,
+				A4EE10942AA04A6A002A9A62 /* TagCell.swift in Sources */,
 				A43894AC2A93523200BE77A6 /* MapVC.swift in Sources */,
 				A477B7D02A85E65700A5388A /* MainVC.swift in Sources */,
+				A4EE108B2AA03F3F002A9A62 /* TagListView.swift in Sources */,
 				A416F3CA2A94528600FD4957 /* BottomSheetController.swift in Sources */,
 				A416F3CD2A94528600FD4957 /* BottomSheetInteractiveDismissalTransition.swift in Sources */,
 				A477B7DE2A86117200A5388A /* TableVC.swift in Sources */,
+				A40E8D162A9DE01000A84018 /* StateConfigVC.swift in Sources */,
 				A477B7E22A86128B00A5388A /* SampleCell.swift in Sources */,
 				A416F3D52A9454C600FD4957 /* Withable.swift in Sources */,
 				A416F3EB2A946AB400FD4957 /* Collection.swift in Sources */,
@@ -749,6 +824,7 @@
 				A477B7D62A85EA6E00A5388A /* TableNCollection.swift in Sources */,
 				A416F3E02A9454DF00FD4957 /* UIButton+Extensions.swift in Sources */,
 				A4460C242A975E0B007BA6BA /* DashedLineView.swift in Sources */,
+				A49B9FD02A9EFF23002DC538 /* OTPPinEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,7 +894,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -875,7 +951,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -903,7 +979,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -939,7 +1015,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

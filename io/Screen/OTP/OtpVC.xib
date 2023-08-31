@@ -13,7 +13,6 @@
             <connections>
                 <outlet property="bottomViewConstraint" destination="YYE-8L-1aE" id="Voi-PX-INz"/>
                 <outlet property="otpCountDown" destination="wn7-8R-IkU" id="E7Q-6d-8UJ"/>
-                <outlet property="otpField" destination="eb3-ev-8cU" id="Aj8-UE-gbI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

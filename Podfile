@@ -17,7 +17,8 @@ target 'io' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'KeyboardDismisser'
-  pod 'lottie-ios', '3.2.3' 
+  pod 'lottie-ios', '3.2.3'
+  pod 'DPOTPView'
 
   install_all_flutter_pods(flutter_application_path)
 end
