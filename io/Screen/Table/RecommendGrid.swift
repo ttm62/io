@@ -25,13 +25,16 @@ class RecommendGrid: UITableViewCell, ReusableView, NibLoadableView {
     
     var layout: UICollectionViewFlowLayout = {
         // Flow layout
-        let screenWidth = UIScreen.main.bounds.width - 20
+        let horizontalPadding: CGFloat = 16
+        let cellSpacing: CGFloat = 16
+        let screenWidth = UIScreen.main.bounds.width - horizontalPadding * 2 - cellSpacing
         let layout = UICollectionViewFlowLayout()
         
-        layout.sectionInset = .init(top: 0, left: 5, bottom: 0, right: 5)
-        layout.itemSize = .init(width: screenWidth/3, height: (screenWidth/3)*5/4)
-        layout.minimumInteritemSpacing = 5
-        layout.minimumLineSpacing = 5
+//        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        layout.sectionInset = .init(top: 5, left: 16, bottom: 10, right: 16)
+        layout.itemSize = .init(width: screenWidth/2, height: screenWidth/2 + 44)
+//        layout.minimumInteritemSpacing = 5
+//        layout.minimumLineSpacing = 5
         
         return layout
     }()
@@ -44,6 +47,8 @@ class RecommendGrid: UITableViewCell, ReusableView, NibLoadableView {
         recommendGrid.dataSource = self
 
         recommendGrid.setCollectionViewLayout(layout, animated: true)
+//        recommendGrid.translatesAutoresizingMaskIntoConstraints = false
+        recommendGrid.isScrollEnabled = false
         
 //        var height = self.recommendGrid.collectionViewLayout.collectionViewContentSize.height
 //        recommendGrid.frame.height = height
@@ -57,13 +62,13 @@ class RecommendGrid: UITableViewCell, ReusableView, NibLoadableView {
 
 extension RecommendGrid: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 120
+        return 12
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: RecommendGridCell = collectionView.dequeueReusableCell(for: indexPath)
         
-        cell.backgroundColor = .randomColor()
+//        cell.backgroundColor = .randomColor()
         return cell
     }
     

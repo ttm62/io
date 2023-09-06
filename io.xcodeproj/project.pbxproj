@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5D48FD471404B37B20B737BB /* Pods_io.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8A5C631F23680B8F4F616 /* Pods_io.framework */; };
+		61EE40B52AA87653002B7491 /* PeriodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EE40B32AA87653002B7491 /* PeriodVC.swift */; };
+		61EE40B62AA87653002B7491 /* PeriodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61EE40B42AA87653002B7491 /* PeriodVC.xib */; };
+		61EE40B92AA87672002B7491 /* PeriodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EE40B82AA87672002B7491 /* PeriodView.swift */; };
+		61EE40BB2AA87679002B7491 /* PeriodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61EE40BA2AA87679002B7491 /* PeriodView.xib */; };
 		A40E8D162A9DE01000A84018 /* StateConfigVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E8D142A9DE01000A84018 /* StateConfigVC.swift */; };
 		A40E8D172A9DE01000A84018 /* StateConfigVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40E8D152A9DE01000A84018 /* StateConfigVC.xib */; };
 		A40ED9412A89DA54006EF1BE /* PagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40ED93F2A89DA54006EF1BE /* PagesCell.swift */; };
@@ -104,6 +108,10 @@
 
 /* Begin PBXFileReference section */
 		48F6FB8B8B9F518C82FCBD47 /* Pods-io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-io.release.xcconfig"; path = "Target Support Files/Pods-io/Pods-io.release.xcconfig"; sourceTree = "<group>"; };
+		61EE40B32AA87653002B7491 /* PeriodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodVC.swift; sourceTree = "<group>"; };
+		61EE40B42AA87653002B7491 /* PeriodVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodVC.xib; sourceTree = "<group>"; };
+		61EE40B82AA87672002B7491 /* PeriodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodView.swift; sourceTree = "<group>"; };
+		61EE40BA2AA87679002B7491 /* PeriodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodView.xib; sourceTree = "<group>"; };
 		A40E8D142A9DE01000A84018 /* StateConfigVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateConfigVC.swift; sourceTree = "<group>"; };
 		A40E8D152A9DE01000A84018 /* StateConfigVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StateConfigVC.xib; sourceTree = "<group>"; };
 		A40ED93F2A89DA54006EF1BE /* PagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesCell.swift; sourceTree = "<group>"; };
@@ -214,6 +222,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61EE40B22AA8763F002B7491 /* PeriodVC */ = {
+			isa = PBXGroup;
+			children = (
+				61EE40B72AA87659002B7491 /* PeriodView */,
+				61EE40B32AA87653002B7491 /* PeriodVC.swift */,
+				61EE40B42AA87653002B7491 /* PeriodVC.xib */,
+			);
+			path = PeriodVC;
+			sourceTree = "<group>";
+		};
+		61EE40B72AA87659002B7491 /* PeriodView */ = {
+			isa = PBXGroup;
+			children = (
+				61EE40B82AA87672002B7491 /* PeriodView.swift */,
+				61EE40BA2AA87679002B7491 /* PeriodView.xib */,
+			);
+			path = PeriodView;
+			sourceTree = "<group>";
+		};
 		A40E8D132A9DDFFD00A84018 /* StateConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +460,7 @@
 		A477B7DA2A86100400A5388A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				61EE40B22AA8763F002B7491 /* PeriodVC */,
 				A489A4C72AA08F0D0047DBAA /* ITSCBlockVC */,
 				A4EE10962AA074DA002A9A62 /* ConfirmDestination */,
 				A4EE108C2AA04962002A9A62 /* TagVC */,
@@ -637,13 +665,13 @@
 			buildConfigurationList = A477B7CB2A85E4B500A5388A /* Build configuration list for PBXNativeTarget "io" */;
 			buildPhases = (
 				B15CEBB5F62878D5EFFCBB3D /* [CP] Check Pods Manifest.lock */,
-				F3E21F4D04B500472F4BFDDC /* [CP-User] Run Flutter Build io_flutter Script */,
+				EABD5D903FA7C5D2EC3C5F20 /* [CP-User] Run Flutter Build io_flutter Script */,
 				A477B7B32A85E4B100A5388A /* Sources */,
 				A477B7B42A85E4B100A5388A /* Frameworks */,
 				A477B7B52A85E4B100A5388A /* Resources */,
 				9F02880D21CD4D5FC8BEEE73 /* [CP] Embed Pods Frameworks */,
-				3D56FD84C99B2F88F69ADBE7 /* [CP-User] Embed Flutter Build io_flutter Script */,
 				8113B3B0EFA4CF2195D919FA /* [CP] Copy Pods Resources */,
+				713FDFC4EF1549FABEBE85E0 /* [CP-User] Embed Flutter Build io_flutter Script */,
 			);
 			buildRules = (
 			);
@@ -699,6 +727,7 @@
 				A4EE10952AA04A6A002A9A62 /* TagCell.xib in Resources */,
 				A4B64BF52A95C2EC00F4E5EC /* OtherChatCell.xib in Resources */,
 				A477B7E32A86128B00A5388A /* SampleCell.xib in Resources */,
+				61EE40B62AA87653002B7491 /* PeriodVC.xib in Resources */,
 				A489A4C42AA0868F0047DBAA /* ITSCBlock.xib in Resources */,
 				A4460BF62A974630007BA6BA /* FontVC.xib in Resources */,
 				A4460C212A975C4E007BA6BA /* NunitoSans-Italic.ttf in Resources */,
@@ -707,6 +736,7 @@
 				A4B64BF12A95C2D900F4E5EC /* MeChatCell.xib in Resources */,
 				A4E9CF8D2A9C90B40066C947 /* location_drop.json in Resources */,
 				A40ED9422A89DA54006EF1BE /* PagesCell.xib in Resources */,
+				61EE40BB2AA87679002B7491 /* PeriodView.xib in Resources */,
 				A43894CC2A936AAE00BE77A6 /* DriverNoteCell.xib in Resources */,
 				A477B7DF2A86117200A5388A /* TableVC.xib in Resources */,
 				A4EA23B62A8B85D70031E8BC /* RecommendGrid.xib in Resources */,
@@ -735,7 +765,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3D56FD84C99B2F88F69ADBE7 /* [CP-User] Embed Flutter Build io_flutter Script */ = {
+		713FDFC4EF1549FABEBE85E0 /* [CP-User] Embed Flutter Build io_flutter Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -801,7 +831,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3E21F4D04B500472F4BFDDC /* [CP-User] Run Flutter Build io_flutter Script */ = {
+		EABD5D903FA7C5D2EC3C5F20 /* [CP-User] Run Flutter Build io_flutter Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -834,6 +864,7 @@
 				A416F3DF2A9454DF00FD4957 /* UILabel+Extensions.swift in Sources */,
 				A4EA23B22A8B834A0031E8BC /* StretchyHeader.swift in Sources */,
 				A4B64BF42A95C2EC00F4E5EC /* OtherChatCell.swift in Sources */,
+				61EE40B92AA87672002B7491 /* PeriodView.swift in Sources */,
 				A416F3E92A94660E00FD4957 /* DateHelper.swift in Sources */,
 				A4B64BF02A95C2D900F4E5EC /* MeChatCell.swift in Sources */,
 				A477B7BB2A85E4B100A5388A /* AppDelegate.swift in Sources */,
@@ -863,6 +894,7 @@
 				A4E9CF882A9C46300066C947 /* DestinationVC.swift in Sources */,
 				A4B64BEB2A95ABF700F4E5EC /* ChatCell.swift in Sources */,
 				A477B7D32A85E9CD00A5388A /* SceneDelegate.swift in Sources */,
+				61EE40B52AA87653002B7491 /* PeriodVC.swift in Sources */,
 				A416F3D72A9454D200FD4957 /* NSObject+Extensions.swift in Sources */,
 				A48232642A98608D00D26680 /* SelectVehicle.swift in Sources */,
 				A438949B2A9303BF00BE77A6 /* StretchyView.swift in Sources */,
@@ -1019,7 +1051,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DMC58Q9KA7;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				EXCLUDED_ARCHS = "";
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = io/Info.plist;
 				INFOPLIST_KEY_NSContactsUsageDescription = "Xin quyền đọc danh bạ =]";
@@ -1055,7 +1087,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DMC58Q9KA7;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				EXCLUDED_ARCHS = "";
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = io/Info.plist;
 				INFOPLIST_KEY_NSContactsUsageDescription = "Xin quyền đọc danh bạ =]";

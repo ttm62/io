@@ -13,6 +13,12 @@ import AVFoundation
 final
 class MainVC: UIViewController {
     
+    @IBAction
+    func didTapPeriod(_ sender: UIButton) {
+        let periodVC = PeriodVC.loadFromNib()
+        self.navigationController?.pushViewController(periodVC, animated: true)
+    }
+    
     @IBAction 
     func didTapOpenTable(_ sender: UIButton) {
         let tableVC = TableVC.loadFromNib()
@@ -41,8 +47,8 @@ class MainVC: UIViewController {
     
     @IBAction
     func didTapMap() {
-        let mapVC = MapVC.loadFromNib()
-        self.navigationController?.pushViewController(mapVC, animated: true)
+//        let mapVC = MapVC.loadFromNib()
+//        self.navigationController?.pushViewController(mapVC, animated: true)
     }
     
     @IBAction

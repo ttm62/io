@@ -6,24 +6,46 @@ PODS:
   - DifferenceKit/Core (1.3.0)
   - DifferenceKit/UIKitExtension (1.3.0):
     - DifferenceKit/Core
+  - DPOTPView (1.5.12)
   - Flutter (1.0.0)
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
+  - GoogleMaps (7.4.0):
+    - GoogleMaps/Maps (= 7.4.0)
+  - GoogleMaps/Base (7.4.0)
+  - GoogleMaps/Maps (7.4.0):
+    - GoogleMaps/Base
+  - GooglePlaces (7.4.0)
   - IBPCollectionViewCompositionalLayout (0.6.9)
+  - KeyboardDismisser (1.0.0)
+  - lottie-ios (3.2.3)
+  - RichString (2.2.1)
 
 DEPENDENCIES:
   - AEOTPTextField
   - DiffableDataSources
+  - DPOTPView
   - Flutter (from `../io_flutter/.ios/Flutter`)
   - FlutterPluginRegistrant (from `../io_flutter/.ios/Flutter/FlutterPluginRegistrant`)
+  - GoogleMaps
+  - GooglePlaces
   - IBPCollectionViewCompositionalLayout
+  - KeyboardDismisser
+  - lottie-ios (= 3.2.3)
+  - RichString
 
 SPEC REPOS:
   trunk:
     - AEOTPTextField
     - DiffableDataSources
     - DifferenceKit
+    - DPOTPView
+    - GoogleMaps
+    - GooglePlaces
     - IBPCollectionViewCompositionalLayout
+    - KeyboardDismisser
+    - lottie-ios
+    - RichString
 
 EXTERNAL SOURCES:
   Flutter:
@@ -35,10 +57,16 @@ SPEC CHECKSUMS:
   AEOTPTextField: a275823fde05601c5da7f8fb66aaecb41289b370
   DiffableDataSources: 1ddde2de1978cc02619b2c3bfafab20e68b57279
   DifferenceKit: ab185c4d7f9cef8af3fcf593e5b387fb81e999ca
+  DPOTPView: 28d8a0a84a2ff4b1e4a7712065aba1cbb14e2704
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   FlutterPluginRegistrant: 58acfb6cb31ee4ca14f920aba101815efda113ee
+  GoogleMaps: 032f676450ba0779bd8ce16840690915f84e57ac
+  GooglePlaces: 544e908d94860bf6f8fc1865b80d2c7eb6b5f937
   IBPCollectionViewCompositionalLayout: bbb29e39ac564666a8c3cdb6633ed944b6feb55b
+  KeyboardDismisser: 52071a2b44a87f866ec4af949ecdbfd773adf4f0
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  RichString: 1f80e0025ea8ed2d864deb2beb73756da9600a97
 
-PODFILE CHECKSUM: 98b62405c2edf4267855964b966591e78c8eca1f
+PODFILE CHECKSUM: d2334373b84771fa102b7a6c29bd2b8f4732fa0d
 
 COCOAPODS: 1.12.1
